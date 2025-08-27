@@ -17,7 +17,6 @@ const Footer = () => {
     { name: "Transportation & Logistics", href: "/transportation" },
     { name: "Newspaper Distribution", href: "/newspapers" },
     { name: "Magazines & Books", href: "/magazines" },
-    { name: "Payment Center", href: "/payment" },
   ];
 
   const company = [

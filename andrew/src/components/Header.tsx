@@ -92,9 +92,7 @@ const Header = () => {
               )}
             </div>
 
-            <Link to="/payment" className="text-foreground hover:text-primary transition-colors">
-              Payment Center
-            </Link>
+
             <Link to="/contact" className="text-foreground hover:text-primary transition-colors">
               Contact
             </Link>
@@ -146,9 +144,7 @@ const Header = () => {
                 ))}
               </div>
 
-              <Link to="/payment" className="text-foreground hover:text-primary transition-colors">
-                Payment Center
-              </Link>
+
               <Link to="/contact" className="text-foreground hover:text-primary transition-colors">
                 Contact
               </Link>
