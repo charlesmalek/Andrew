@@ -6,7 +6,7 @@ import {
   MapPin, 
   TrendingUp 
 } from "lucide-react";
-import heroImage from "@/assets/andrew-fleet-hq.jpg";
+import heroImage from "@/assets/andrew-fleet-final.jpg";
 import { 
   NewYorkTimesLogo, 
   WallStreetJournalLogo, 
