@@ -32,6 +32,29 @@ git commit -m "$COMMIT_MESSAGE"
 echo "🚀 Pushing to remote repository..."
 if git push; then
     echo "✅ Successfully committed and pushed changes!"
+    
+    # Verify Vercel deployment
+    echo "🔍 Verifying Vercel deployment..."
+    sleep 10
+    
+    # Get the production URL
+    PRODUCTION_URL=$(vercel project ls 2>/dev/null | grep "andrew" | head -1 | awk '{print $3}' || echo "")
+    
+    if [ -n "$PRODUCTION_URL" ]; then
+        echo "🌐 Checking deployment status..."
+        HTTP_STATUS=$(curl -s -o /dev/null -w "%{http_code}" "$PRODUCTION_URL" 2>/dev/null || echo "000")
+        
+        if [ "$HTTP_STATUS" = "200" ]; then
+            echo "✅ Vercel deployment verified! Site is accessible at: $PRODUCTION_URL"
+        else
+            echo "⚠️  Vercel deployment may have issues. HTTP Status: $HTTP_STATUS"
+            echo "🔄 Attempting to force redeploy..."
+            vercel --prod --force --yes >/dev/null 2>&1
+            echo "✅ Force redeploy initiated. Check $PRODUCTION_URL in a few minutes."
+        fi
+    else
+        echo "ℹ️  Vercel project not found or not linked."
+    fi
 else
     echo "❌ Failed to push changes. You may need to set up a remote repository first."
     echo "💡 To set up a remote repository, use:"
