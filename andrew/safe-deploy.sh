@@ -26,7 +26,7 @@ sleep 20
 
 # Step 4: Get production URL and verify
 echo "🔍 Verifying deployment..."
-PRODUCTION_URL=$(vercel project ls | grep "andrew" | head -1 | awk '{print $3}')
+PRODUCTION_URL="https://andrew-beta.vercel.app"
 
 if [ -n "$PRODUCTION_URL" ]; then
     echo "🌍 Checking: $PRODUCTION_URL"
