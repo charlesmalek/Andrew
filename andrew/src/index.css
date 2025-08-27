@@ -28,10 +28,10 @@
     --secondary-foreground: 0 0% 29%;
     --secondary-dark: 0 0% 71%;
 
-    /* Accent: Coral Red #FF6B6B - CTAs & Energy */
-    --accent-coral: 0 75% 70%;
+    /* Accent: Medium Grey #6B7280 - CTAs & Energy */
+    --accent-coral: 0 0% 50%;
     --accent-coral-foreground: 0 0% 98%;
-    --accent-coral-dark: 0 65% 58%;
+    --accent-coral-dark: 0 0% 40%;
 
     /* Medium Blue #1E6BB8 - Links & Interactive */
     --accent-blue: 213 73% 42%;
@@ -54,7 +54,7 @@
 
     /* Modern Gradients */
     --gradient-hero: linear-gradient(135deg, hsl(213 75% 20%), hsl(213 65% 28%));
-    --gradient-coral: linear-gradient(135deg, hsl(0 75% 70%), hsl(0 65% 58%));
+    --gradient-coral: linear-gradient(135deg, hsl(0 0% 50%), hsl(0 0% 40%));
     --gradient-subtle: linear-gradient(180deg, hsl(0 0% 100%), hsl(0 0% 96%));
 
     /* Professional Shadows */
@@ -216,7 +216,7 @@
   @media (prefers-contrast: high) {
     :root {
       --primary: 213 100% 15%;
-      --accent-coral: 0 100% 50%;
+      --accent-coral: 0 0% 30%;
       --border: 0 0% 20%;
     }
   }
