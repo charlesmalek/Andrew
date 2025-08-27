@@ -6,7 +6,7 @@ import {
   MapPin, 
   TrendingUp 
 } from "lucide-react";
-import heroImage from "@/assets/andrew-fleet.jpg";
+import heroImage from "@/assets/andrew-fleet-hq.jpg";
 import { 
   NewYorkTimesLogo, 
   WallStreetJournalLogo, 
@@ -29,7 +29,7 @@ const HeroSection = () => {
       <div className="absolute inset-0 z-0">
         <img 
           src={heroImage} 
-          alt="Andrew Distribution fleet of white delivery trucks lined up at loading dock facility"
+          alt="Andrew Distribution's impressive fleet of 15+ white delivery trucks organized in formation at modern distribution center with multiple loading dock bays"
           className="w-full h-full object-cover"
           loading="eager"
           decoding="async"
