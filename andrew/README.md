@@ -17,7 +17,20 @@ Use this script to manually commit and push all current changes.
 ./git-auto-commit.sh "Your custom commit message"
 ```
 
-### 2. `git-watcher.sh` - Continuous file watching
+### 2. `commit.sh` - Quick commit alias
+
+A shorter alias for the auto-commit script.
+
+**Usage:**
+```bash
+# Commit with default timestamp message
+./commit.sh
+
+# Commit with custom message
+./commit.sh "Your custom commit message"
+```
+
+### 3. `git-watcher.sh` - Continuous file watching
 
 Use this script to automatically watch for file changes and commit/push them periodically.
 
