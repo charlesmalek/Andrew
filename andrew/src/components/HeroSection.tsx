@@ -51,10 +51,6 @@ const HeroSection = () => {
 
               {/* CTA Buttons */}
               <div className="flex flex-col sm:flex-row gap-4">
-                <Button variant="cta" size="xl" className="group">
-                  Get a Quote
-                  <ArrowRight className="h-5 w-5 group-hover:translate-x-1 transition-transform" />
-                </Button>
                 <Button variant="cta-outline" size="xl" className="bg-primary-foreground/10 border-primary-foreground/30 text-primary-foreground hover:bg-primary-foreground/20">
                   Talk to Sales
                 </Button>

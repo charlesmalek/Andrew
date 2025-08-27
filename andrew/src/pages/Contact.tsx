@@ -65,7 +65,7 @@ const Contact = () => {
               <div>
                 <Card>
                   <CardHeader>
-                    <CardTitle className="heading-md text-primary">Get a Quote</CardTitle>
+                    <CardTitle className="heading-md text-primary">Contact Us</CardTitle>
                     <CardDescription>
                       Fill out the form below and we'll get back to you within 24 hours.
                     </CardDescription>

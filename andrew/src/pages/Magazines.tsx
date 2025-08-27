@@ -197,7 +197,7 @@ const Magazines = () => {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button variant="cta" size="lg">
-              Get Distribution Quote
+              Contact Us for Distribution
             </Button>
             <Button variant="enterprise" size="lg">
               Call (708) 344-3200

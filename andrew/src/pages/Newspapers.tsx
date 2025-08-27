@@ -184,9 +184,6 @@ const Newspapers = () => {
             Let our experienced team handle your newspaper distribution needs while you focus on creating great content.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button variant="cta" size="lg">
-              Request a Quote
-            </Button>
             <Button variant="enterprise" size="lg">
               Call (708) 344-3200
             </Button>
