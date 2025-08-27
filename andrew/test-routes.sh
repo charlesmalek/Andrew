@@ -3,7 +3,7 @@
 # Andrew Distribution - Route Testing Script
 # This script tests all routes to ensure no 404 errors
 
-SITE_URL="https://andrew-beta.vercel.app"
+SITE_URL="https://andrew-c647lrjax-charlesmaleks-projects.vercel.app"
 
 echo "🧪 Testing Andrew Distribution Routes..."
 echo "Site: $SITE_URL"
