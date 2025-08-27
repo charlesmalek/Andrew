@@ -14,8 +14,8 @@ if ! git rev-parse --git-dir > /dev/null 2>&1; then
     exit 1
 fi
 
-# Check if there are any changes to commit
-if git diff-index --quiet HEAD --; then
+# Check if there are any changes to commit (including untracked files)
+if git diff-index --quiet HEAD -- && [ -z "$(git ls-files --others --exclude-standard)" ]; then
     echo "✅ No changes to commit"
     exit 0
 fi
