@@ -9,7 +9,13 @@
     "build:dev": "vite build --mode development",
     "lint": "eslint .",
     "preview": "vite preview",
-    "vercel-build": "vite build"
+    "vercel-build": "vite build",
+    "validate": "node scripts/validate-deployment.js",
+    "test:routes": "bash scripts/test-routes.sh",
+    "deploy:force": "bash scripts/force-deploy.sh",
+    "deploy:nuclear": "bash scripts/nuclear-deploy.sh",
+    "health-check": "bash scripts/health-check.sh",
+    "type-check": "tsc --noEmit"
   },
   "dependencies": {
     "@hookform/resolvers": "^3.10.0",

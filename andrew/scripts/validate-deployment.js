@@ -15,7 +15,7 @@ const __dirname = path.dirname(__filename);
 console.log('🔍 Validating deployment configuration...\n');
 
 // Read App.tsx to extract routes
-const appPath = path.join(__dirname, 'src', 'App.tsx');
+const appPath = path.join(__dirname, '..', 'src', 'App.tsx');
 const appContent = fs.readFileSync(appPath, 'utf8');
 
 // Extract route definitions
@@ -29,7 +29,7 @@ definedRoutes.forEach(route => console.log(`   ${route}`));
 console.log();
 
 // Read Header.tsx to extract navigation links
-const headerPath = path.join(__dirname, 'src', 'components', 'Header.tsx');
+const headerPath = path.join(__dirname, '..', 'src', 'components', 'Header.tsx');
 const headerContent = fs.readFileSync(headerPath, 'utf8');
 
 // Extract navigation links
@@ -68,7 +68,7 @@ console.log('📁 Checking route components...');
 const importMatches = appContent.match(/import (\w+) from "\.\/pages\/(\w+)"/g) || [];
 const componentFiles = importMatches.map(match => {
     const [, componentName, fileName] = match.match(/import (\w+) from "\.\/pages\/(\w+)"/);
-    return { componentName, fileName, path: path.join(__dirname, 'src', 'pages', `${fileName}.tsx`) };
+    return { componentName, fileName, path: path.join(__dirname, '..', 'src', 'pages', `${fileName}.tsx`) };
 });
 
 componentFiles.forEach(component => {
