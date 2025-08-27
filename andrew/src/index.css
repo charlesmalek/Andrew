@@ -1,0 +1,241 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Andrew Distribution Design System - Professional Brand Implementation */
+
+@layer base {
+  :root {
+    /* New Brand Colors - Professional & Modern */
+    --background: 0 0% 100%;
+    --foreground: 0 0% 29%;
+
+    /* Trust & Reliability Theme */
+    --card: 0 0% 100%;
+    --card-foreground: 0 0% 29%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 29%;
+
+    /* Primary: Deep Navy Blue #0A2E5A - Trust & Professionalism */
+    --primary: 213 75% 20%;
+    --primary-foreground: 0 0% 98%;
+    --primary-light: 213 65% 28%;
+    --primary-lighter: 213 55% 35%;
+
+    /* Secondary: Off-White & Charcoal Gray */
+    --secondary: 0 0% 96%;
+    --secondary-foreground: 0 0% 29%;
+    --secondary-dark: 0 0% 71%;
+
+    /* Accent: Coral Red #FF6B6B - CTAs & Energy */
+    --accent-coral: 0 75% 70%;
+    --accent-coral-foreground: 0 0% 98%;
+    --accent-coral-dark: 0 65% 58%;
+
+    /* Medium Blue #1E6BB8 - Links & Interactive */
+    --accent-blue: 213 73% 42%;
+    --accent-blue-foreground: 0 0% 98%;
+    --accent-blue-light: 213 65% 50%;
+
+    /* Supporting Colors */
+    --muted: 0 0% 96%;
+    --muted-foreground: 0 0% 50%;
+
+    --accent: 0 0% 96%;
+    --accent-foreground: 0 0% 29%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 0 0% 91%;
+    --input: 0 0% 91%;
+    --ring: 213 75% 20%;
+
+    /* Modern Gradients */
+    --gradient-hero: linear-gradient(135deg, hsl(213 75% 20%), hsl(213 65% 28%));
+    --gradient-coral: linear-gradient(135deg, hsl(0 75% 70%), hsl(0 65% 58%));
+    --gradient-subtle: linear-gradient(180deg, hsl(0 0% 100%), hsl(0 0% 96%));
+
+    /* Professional Shadows */
+    --shadow-enterprise: 0 10px 40px -10px hsl(213 75% 20% / 0.15);
+    --shadow-card: 0 4px 20px -4px hsl(213 75% 20% / 0.08);
+    --shadow-button: 0 2px 8px -2px hsl(213 75% 20% / 0.12);
+    --shadow-lift: 0 4px 16px -4px hsl(213 75% 20% / 0.2);
+
+    /* Smooth Professional Transitions */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-bounce: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+
+    --radius: 0.75rem;
+  }
+
+  .dark {
+    /* Dark mode for enterprise environments */
+    --background: 213 75% 8%;
+    --foreground: 0 0% 95%;
+
+    --card: 213 75% 10%;
+    --card-foreground: 0 0% 95%;
+
+    --popover: 213 75% 10%;
+    --popover-foreground: 0 0% 95%;
+
+    --primary: 0 0% 95%;
+    --primary-foreground: 213 75% 20%;
+
+    --secondary: 213 35% 15%;
+    --secondary-foreground: 0 0% 95%;
+
+    --muted: 213 35% 15%;
+    --muted-foreground: 0 0% 71%;
+
+    --accent: 213 35% 15%;
+    --accent-foreground: 0 0% 95%;
+
+    --destructive: 0 75% 55%;
+    --destructive-foreground: 0 0% 95%;
+
+    --border: 213 35% 15%;
+    --input: 213 35% 15%;
+    --ring: 0 75% 70%;
+
+    /* Dark mode gradients */
+    --gradient-hero: linear-gradient(135deg, hsl(213 75% 8%), hsl(213 65% 12%));
+    --shadow-enterprise: 0 10px 40px -10px hsl(0 0% 0% / 0.3);
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground antialiased;
+    font-feature-settings: "rlig" 1, "calt" 1;
+    font-family: 'Open Sans', system-ui, sans-serif;
+  }
+
+  /* Andrew Distribution Typography Scale - Montserrat + Open Sans */
+  .heading-xl {
+    @apply text-[42px] leading-[52px] font-bold tracking-tight;
+    font-family: 'Montserrat', system-ui, sans-serif;
+    font-weight: 700;
+  }
+  
+  .heading-lg {
+    @apply text-[34px] leading-[44px] font-bold tracking-tight;
+    font-family: 'Montserrat', system-ui, sans-serif;
+    font-weight: 700;
+  }
+  
+  .heading-md {
+    @apply text-[28px] leading-[36px] font-semibold tracking-tight;
+    font-family: 'Montserrat', system-ui, sans-serif;
+    font-weight: 600;
+  }
+  
+  .heading-sm {
+    @apply text-[22px] leading-[30px] font-semibold tracking-tight;
+    font-family: 'Montserrat', system-ui, sans-serif;
+    font-weight: 600;
+  }
+
+  /* Body Text - Open Sans */
+  .body-large {
+    @apply text-[18px] leading-[28px] font-normal;
+    font-family: 'Open Sans', system-ui, sans-serif;
+    font-weight: 400;
+  }
+
+  .body-medium {
+    @apply text-[16px] leading-[26px] font-normal;
+    font-family: 'Open Sans', system-ui, sans-serif;
+    font-weight: 400;
+  }
+
+  .caption {
+    @apply text-[14px] leading-[20px] font-normal;
+    font-family: 'Open Sans', system-ui, sans-serif;
+    font-weight: 400;
+  }
+
+  /* Enterprise Layout Utilities */
+  .container-enterprise {
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+  }
+
+  .section-padding {
+    @apply py-16 lg:py-24;
+  }
+
+  /* Professional Animations */
+  .fade-in-up {
+    @apply opacity-0 translate-y-8;
+    animation: fade-in-up 0.8s ease-out forwards;
+  }
+
+  @keyframes fade-in-up {
+    to {
+      @apply opacity-100 translate-y-0;
+    }
+  }
+
+  .hover-lift {
+    @apply transition-transform duration-300 ease-out;
+  }
+  
+  .hover-lift:hover {
+    @apply -translate-y-1;
+    box-shadow: var(--shadow-lift);
+  }
+
+  /* Professional Button Effects */
+  .btn-hover-lift {
+    @apply transition-all duration-300 ease-out;
+  }
+  
+  .btn-hover-lift:hover {
+    @apply -translate-y-0.5;
+    box-shadow: var(--shadow-lift);
+  }
+
+  /* Enhanced Focus States for Accessibility */
+  .focus-visible\:ring-enhanced:focus-visible {
+    @apply ring-2 ring-accent-coral ring-offset-2 ring-offset-background;
+  }
+
+  /* Skip Link for Screen Readers */
+  .skip-link {
+    @apply absolute -top-10 left-4 z-50 bg-primary text-primary-foreground px-4 py-2 rounded-md;
+    @apply transition-all duration-200 focus:top-4;
+  }
+
+  /* High Contrast Mode Support */
+  @media (prefers-contrast: high) {
+    :root {
+      --primary: 213 100% 15%;
+      --accent-coral: 0 100% 50%;
+      --border: 0 0% 20%;
+    }
+  }
+
+  /* Reduced Motion Support */
+  @media (prefers-reduced-motion: reduce) {
+    .fade-in-up {
+      animation: none;
+      @apply opacity-100 translate-y-0;
+    }
+    
+    .hover-lift:hover {
+      @apply translate-y-0;
+    }
+    
+    * {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+    }
+  }
+}
