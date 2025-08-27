@@ -103,9 +103,6 @@ const Header = () => {
 
           {/* CTA Buttons */}
           <div className="hidden lg:flex items-center gap-3">
-            <Button variant="enterprise" size="sm">
-              Get Quote
-            </Button>
             <Button variant="cta" size="sm">
               Talk to Sales
             </Button>
@@ -153,9 +150,6 @@ const Header = () => {
               </Link>
               
               <div className="flex flex-col gap-2 pt-4">
-                <Button variant="enterprise" size="sm" className="w-full">
-                  Get Quote
-                </Button>
                 <Button variant="cta" size="sm" className="w-full">
                   Talk to Sales
                 </Button>
