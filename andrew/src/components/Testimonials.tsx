@@ -1,5 +1,13 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Star, Quote } from "lucide-react";
+import { 
+  NewYorkTimesLogo, 
+  WallStreetJournalLogo, 
+  LegoLogo, 
+  StarbucksLogo, 
+  JewelOscoLogo,
+  MarriottLogo 
+} from "@/assets/logos";
 
 const Testimonials = () => {
   const testimonials = [
@@ -82,13 +90,13 @@ const Testimonials = () => {
           <p className="caption text-muted-foreground mb-6">
             Trusted by leading brands across the Midwest
           </p>
-          <div className="flex flex-wrap justify-center gap-8 opacity-60">
-            <span className="text-lg font-semibold text-muted-foreground">New York Times</span>
-            <span className="text-lg font-semibold text-muted-foreground">Wall Street Journal</span>
-            <span className="text-lg font-semibold text-muted-foreground">LEGO</span>
-            <span className="text-lg font-semibold text-muted-foreground">Starbucks</span>
-            <span className="text-lg font-semibold text-muted-foreground">Jewel-Osco</span>
-            <span className="text-lg font-semibold text-muted-foreground">Marriott Hotels</span>
+          <div className="flex flex-wrap justify-center items-center gap-8 text-muted-foreground">
+            <NewYorkTimesLogo className="h-6 w-auto opacity-60 hover:opacity-100 transition-opacity" />
+            <WallStreetJournalLogo className="h-5 w-auto opacity-60 hover:opacity-100 transition-opacity" />
+            <LegoLogo className="h-6 w-auto opacity-60 hover:opacity-100 transition-opacity" />
+            <StarbucksLogo className="h-8 w-auto opacity-60 hover:opacity-100 transition-opacity" />
+            <JewelOscoLogo className="h-5 w-auto opacity-60 hover:opacity-100 transition-opacity" />
+            <MarriottLogo className="h-5 w-auto opacity-60 hover:opacity-100 transition-opacity" />
           </div>
         </div>
       </div>
