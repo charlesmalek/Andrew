@@ -106,7 +106,7 @@ const About = () => {
             <div className="grid lg:grid-cols-2 gap-12 items-center">
               <div>
                 <h2 className="heading-lg text-primary mb-6">Our Story</h2>
-                <div className="space-y-4 text-muted-foreground leading-relaxed">
+                <div className="space-y-4 text-foreground leading-relaxed">
                   <p>
                     Founded in 1992 in Melrose Park, Illinois, Andrew Distribution began as a small 
                     family-owned business with a simple mission: provide reliable, professional 
@@ -132,7 +132,7 @@ const About = () => {
                   <Card key={stat.label} className="text-center p-6">
                     <CardContent className="pt-6">
                       <p className="heading-md text-primary mb-2">{stat.number}</p>
-                      <p className="caption text-muted-foreground">{stat.label}</p>
+                      <p className="caption text-foreground">{stat.label}</p>
                     </CardContent>
                   </Card>
                 ))}
@@ -146,7 +146,7 @@ const About = () => {
           <div className="container-enterprise">
             <div className="text-center mb-16">
               <h2 className="heading-lg text-primary mb-4">Our Journey</h2>
-              <p className="body-large text-muted-foreground max-w-2xl mx-auto">
+              <p className="body-large text-foreground max-w-2xl mx-auto">
                 Three decades of growth, innovation, and unwavering commitment to service excellence.
               </p>
             </div>
@@ -166,7 +166,7 @@ const About = () => {
                             <span className="text-lg font-semibold text-primary">{milestone.year}</span>
                           </div>
                           <h3 className="heading-sm text-primary mb-2">{milestone.title}</h3>
-                          <p className="text-muted-foreground">{milestone.description}</p>
+                          <p className="text-foreground">{milestone.description}</p>
                         </CardContent>
                       </Card>
                     </div>
@@ -187,7 +187,7 @@ const About = () => {
           <div className="container-enterprise">
             <div className="text-center mb-16">
               <h2 className="heading-lg text-primary mb-4">Our Values</h2>
-              <p className="body-large text-muted-foreground max-w-2xl mx-auto">
+              <p className="body-large text-foreground max-w-2xl mx-auto">
                 The principles that guide everything we do and define who we are as a company.
               </p>
             </div>
@@ -200,7 +200,7 @@ const About = () => {
                       <value.icon className="h-8 w-8 text-primary" />
                     </div>
                     <h3 className="heading-sm text-primary mb-3">{value.title}</h3>
-                    <p className="text-muted-foreground text-sm leading-relaxed">{value.description}</p>
+                    <p className="text-foreground text-sm leading-relaxed">{value.description}</p>
                   </CardContent>
                 </Card>
               ))}

@@ -42,7 +42,7 @@ const Testimonials = () => {
           <h2 className="heading-lg mb-6 text-primary font-heading">
             What Our Clients Say
           </h2>
-          <p className="body-large text-muted-foreground max-w-3xl mx-auto leading-relaxed">
+          <p className="body-large text-foreground max-w-3xl mx-auto leading-relaxed">
             Don't just take our word for it. Here's what our long-term partners have to say 
             about working with Andrew Distribution.
           </p>
@@ -70,14 +70,14 @@ const Testimonials = () => {
                 </div>
 
                 {/* Content */}
-                <blockquote className="text-muted-foreground leading-relaxed mb-6 italic">
+                <blockquote className="text-foreground leading-relaxed mb-6 italic">
                   "{testimonial.content}"
                 </blockquote>
 
                 {/* Author */}
                 <div className="border-t border-border pt-4">
                   <p className="font-semibold text-primary">{testimonial.name}</p>
-                  <p className="text-sm text-muted-foreground">{testimonial.title}</p>
+                  <p className="text-sm text-foreground">{testimonial.title}</p>
                   <p className="text-sm text-accent-orange font-medium">{testimonial.company}</p>
                 </div>
               </CardContent>
@@ -87,10 +87,10 @@ const Testimonials = () => {
 
         {/* Trust Indicators */}
         <div className="mt-16 text-center fade-in-up">
-          <p className="caption text-muted-foreground mb-6">
+          <p className="caption text-foreground mb-6">
             Trusted by leading brands across the Midwest
           </p>
-          <div className="flex flex-wrap justify-center items-center gap-8 text-muted-foreground">
+          <div className="flex flex-wrap justify-center items-center gap-8 text-foreground">
             <div className="flex items-center gap-2">
               <NewYorkTimesLogo className="h-5 w-auto opacity-60" />
               <span className="text-lg font-semibold">New York Times</span>

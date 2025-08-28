@@ -20,7 +20,7 @@ const Magazines = () => {
           <h1 className="heading-xl text-primary mb-6">
             Magazines & Books Distribution
           </h1>
-          <p className="body-large text-muted-foreground max-w-3xl mx-auto">
+          <p className="body-large text-foreground max-w-3xl mx-auto">
             Specialized distribution services for magazines, books, and periodicals. 
             From monthly magazines to special publications, we ensure your content reaches the right audience.
           </p>
@@ -94,28 +94,28 @@ const Magazines = () => {
                 <CheckCircle className="h-5 w-5 text-accent-foreground mt-0.5 flex-shrink-0" />
                 <div>
                   <h3 className="font-semibold text-foreground mb-1">Magazine Distribution</h3>
-                  <p className="text-muted-foreground">Weekly, monthly, and quarterly magazine delivery to retailers.</p>
+                  <p className="text-foreground">Weekly, monthly, and quarterly magazine delivery to retailers.</p>
                 </div>
               </div>
               <div className="flex items-start gap-3">
                 <CheckCircle className="h-5 w-5 text-accent-foreground mt-0.5 flex-shrink-0" />
                 <div>
                   <h3 className="font-semibold text-foreground mb-1">Book Distribution</h3>
-                  <p className="text-muted-foreground">New release and backlist distribution to bookstores and libraries.</p>
+                  <p className="text-foreground">New release and backlist distribution to bookstores and libraries.</p>
                 </div>
               </div>
               <div className="flex items-start gap-3">
                 <CheckCircle className="h-5 w-5 text-accent-foreground mt-0.5 flex-shrink-0" />
                 <div>
                   <h3 className="font-semibold text-foreground mb-1">Subscription Services</h3>
-                  <p className="text-muted-foreground">Direct-to-consumer delivery for subscription publications.</p>
+                  <p className="text-foreground">Direct-to-consumer delivery for subscription publications.</p>
                 </div>
               </div>
               <div className="flex items-start gap-3">
                 <CheckCircle className="h-5 w-5 text-accent-foreground mt-0.5 flex-shrink-0" />
                 <div>
                   <h3 className="font-semibold text-foreground mb-1">Special Editions</h3>
-                  <p className="text-muted-foreground">Handling of limited editions and collector publications.</p>
+                  <p className="text-foreground">Handling of limited editions and collector publications.</p>
                 </div>
               </div>
             </div>
@@ -128,28 +128,28 @@ const Magazines = () => {
                 <CheckCircle className="h-5 w-5 text-accent-foreground mt-0.5 flex-shrink-0" />
                 <div>
                   <h3 className="font-semibold text-foreground mb-1">Industry Expertise</h3>
-                  <p className="text-muted-foreground">Deep understanding of publishing industry requirements and timelines.</p>
+                  <p className="text-foreground">Deep understanding of publishing industry requirements and timelines.</p>
                 </div>
               </div>
               <div className="flex items-start gap-3">
                 <CheckCircle className="h-5 w-5 text-accent-foreground mt-0.5 flex-shrink-0" />
                 <div>
                   <h3 className="font-semibold text-foreground mb-1">Quality Preservation</h3>
-                  <p className="text-muted-foreground">Maintaining publication integrity from warehouse to shelf.</p>
+                  <p className="text-foreground">Maintaining publication integrity from warehouse to shelf.</p>
                 </div>
               </div>
               <div className="flex items-start gap-3">
                 <CheckCircle className="h-5 w-5 text-accent-foreground mt-0.5 flex-shrink-0" />
                 <div>
                   <h3 className="font-semibold text-foreground mb-1">Flexible Partnerships</h3>
-                  <p className="text-muted-foreground">Customizable solutions for independent and major publishers.</p>
+                  <p className="text-foreground">Customizable solutions for independent and major publishers.</p>
                 </div>
               </div>
               <div className="flex items-start gap-3">
                 <CheckCircle className="h-5 w-5 text-accent-foreground mt-0.5 flex-shrink-0" />
                 <div>
                   <h3 className="font-semibold text-foreground mb-1">Return Management</h3>
-                  <p className="text-muted-foreground">Efficient processing of returns and damaged goods.</p>
+                  <p className="text-foreground">Efficient processing of returns and damaged goods.</p>
                 </div>
               </div>
             </div>
@@ -162,11 +162,11 @@ const Magazines = () => {
           <div className="grid md:grid-cols-2 gap-8">
             <div>
               <h3 className="heading-sm text-primary mb-4">Comprehensive Sales Analytics</h3>
-              <p className="text-muted-foreground mb-4">
+              <p className="text-foreground mb-4">
                 Get detailed insights into your magazine performance with our comprehensive sales reporting system. 
                 Track sales trends, identify top-performing locations, and optimize your distribution strategy.
               </p>
-              <ul className="space-y-2 text-muted-foreground">
+              <ul className="space-y-2 text-foreground">
                 <li className="flex items-center gap-2">
                   <CheckCircle className="h-4 w-4 text-accent-coral" />
                   <span>Weekly and monthly sales reports</span>
@@ -191,13 +191,13 @@ const Magazines = () => {
             </div>
             <div>
               <h3 className="heading-sm text-primary mb-4">Digital Access</h3>
-              <p className="text-muted-foreground mb-4">
+              <p className="text-foreground mb-4">
                 Access your sales reports anytime, anywhere through our secure online portal. 
                 Download reports in multiple formats and share insights with your team.
               </p>
               <div className="bg-accent p-4 rounded-lg">
                 <h4 className="font-semibold text-foreground mb-2">Report Features:</h4>
-                <ul className="text-sm text-muted-foreground space-y-1">
+                <ul className="text-sm text-foreground space-y-1">
                   <li>• Real-time sales data</li>
                   <li>• Geographic performance mapping</li>
                   <li>• Historical trend analysis</li>
@@ -215,27 +215,27 @@ const Magazines = () => {
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             <div className="text-center">
               <h3 className="font-semibold text-foreground mb-2">Consumer Magazines</h3>
-              <p className="text-sm text-muted-foreground">Lifestyle, hobby, and interest publications</p>
+              <p className="text-sm text-foreground">Lifestyle, hobby, and interest publications</p>
             </div>
             <div className="text-center">
               <h3 className="font-semibold text-foreground mb-2">Trade Publications</h3>
-              <p className="text-sm text-muted-foreground">Industry-specific and professional magazines</p>
+              <p className="text-sm text-foreground">Industry-specific and professional magazines</p>
             </div>
             <div className="text-center">
               <h3 className="font-semibold text-foreground mb-2">Academic Journals</h3>
-              <p className="text-sm text-muted-foreground">Research and scholarly publications</p>
+              <p className="text-sm text-foreground">Research and scholarly publications</p>
             </div>
             <div className="text-center">
               <h3 className="font-semibold text-foreground mb-2">Children's Books</h3>
-              <p className="text-sm text-muted-foreground">Educational and entertainment books for young readers</p>
+              <p className="text-sm text-foreground">Educational and entertainment books for young readers</p>
             </div>
             <div className="text-center">
               <h3 className="font-semibold text-foreground mb-2">Textbooks</h3>
-              <p className="text-sm text-muted-foreground">Educational materials for schools and universities</p>
+              <p className="text-sm text-foreground">Educational materials for schools and universities</p>
             </div>
             <div className="text-center">
               <h3 className="font-semibold text-foreground mb-2">Special Editions</h3>
-              <p className="text-sm text-muted-foreground">Limited runs and collector publications</p>
+              <p className="text-sm text-foreground">Limited runs and collector publications</p>
             </div>
           </div>
         </div>
@@ -245,7 +245,7 @@ const Magazines = () => {
           <h2 className="heading-lg text-primary mb-4">
             Ready to Distribute Your Publications?
           </h2>
-          <p className="body-large text-muted-foreground mb-6 max-w-2xl mx-auto">
+          <p className="body-large text-foreground mb-6 max-w-2xl mx-auto">
             Partner with us for reliable magazine and book distribution services across the Midwest and beyond.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">

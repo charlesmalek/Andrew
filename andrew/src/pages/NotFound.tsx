@@ -29,10 +29,10 @@ const NotFound = () => {
             <h1 className="heading-xl text-primary">
               404 - Page Not Found
             </h1>
-            <p className="body-large text-muted-foreground">
+            <p className="body-large text-foreground">
               Sorry, we couldn't find the page you're looking for. The page may have been moved, deleted, or the URL might be incorrect.
             </p>
-            <p className="caption text-muted-foreground">
+            <p className="caption text-foreground">
               Requested path: <code className="bg-muted px-2 py-1 rounded text-foreground">{location.pathname}</code>
             </p>
           </div>
@@ -54,7 +54,7 @@ const NotFound = () => {
 
           {/* Quick Links */}
           <div className="mt-12 pt-8 border-t border-border">
-            <p className="caption text-muted-foreground mb-4">
+            <p className="caption text-foreground mb-4">
               Or try one of these popular pages:
             </p>
             <div className="flex flex-wrap justify-center gap-4">

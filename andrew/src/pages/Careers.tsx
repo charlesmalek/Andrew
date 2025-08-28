@@ -20,7 +20,7 @@ const Careers = () => {
           <h1 className="heading-xl text-primary mb-6">
             Join Our Team
           </h1>
-          <p className="body-large text-muted-foreground max-w-3xl mx-auto">
+          <p className="body-large text-foreground max-w-3xl mx-auto">
             Build your career with a company that's been trusted for over 30 years. 
             We're always looking for dedicated professionals to join our growing team.
           </p>
@@ -100,7 +100,7 @@ const Careers = () => {
                 </div>
               </CardHeader>
               <CardContent>
-                <p className="text-muted-foreground mb-4">
+                <p className="text-foreground mb-4">
                   Seeking experienced CDL drivers for newspaper and freight distribution routes. 
                   Clean driving record required. Competitive pay and benefits.
                 </p>
@@ -123,7 +123,7 @@ const Careers = () => {
                 </div>
               </CardHeader>
               <CardContent>
-                <p className="text-muted-foreground mb-4">
+                <p className="text-foreground mb-4">
                   Coordinate delivery schedules, manage routes, and ensure efficient operations. 
                   Experience in logistics or transportation preferred.
                 </p>
@@ -146,7 +146,7 @@ const Careers = () => {
                 </div>
               </CardHeader>
               <CardContent>
-                <p className="text-muted-foreground mb-4">
+                <p className="text-foreground mb-4">
                   Handle incoming and outgoing shipments, maintain inventory accuracy, 
                   and support warehouse operations. No experience required - we'll train!
                 </p>
@@ -169,28 +169,28 @@ const Careers = () => {
                 <CheckCircle className="h-5 w-5 text-accent-foreground mt-0.5 flex-shrink-0" />
                 <div>
                   <h3 className="font-semibold text-foreground mb-1">Health Insurance</h3>
-                  <p className="text-muted-foreground">Comprehensive medical, dental, and vision coverage.</p>
+                  <p className="text-foreground">Comprehensive medical, dental, and vision coverage.</p>
                 </div>
               </div>
               <div className="flex items-start gap-3">
                 <CheckCircle className="h-5 w-5 text-accent-foreground mt-0.5 flex-shrink-0" />
                 <div>
                   <h3 className="font-semibold text-foreground mb-1">Retirement Plans</h3>
-                  <p className="text-muted-foreground">401(k) with company matching to secure your future.</p>
+                  <p className="text-foreground">401(k) with company matching to secure your future.</p>
                 </div>
               </div>
               <div className="flex items-start gap-3">
                 <CheckCircle className="h-5 w-5 text-accent-foreground mt-0.5 flex-shrink-0" />
                 <div>
                   <h3 className="font-semibold text-foreground mb-1">Paid Time Off</h3>
-                  <p className="text-muted-foreground">Generous vacation and sick leave policies.</p>
+                  <p className="text-foreground">Generous vacation and sick leave policies.</p>
                 </div>
               </div>
               <div className="flex items-start gap-3">
                 <CheckCircle className="h-5 w-5 text-accent-foreground mt-0.5 flex-shrink-0" />
                 <div>
                   <h3 className="font-semibold text-foreground mb-1">Performance Bonuses</h3>
-                  <p className="text-muted-foreground">Reward programs for exceptional performance.</p>
+                  <p className="text-foreground">Reward programs for exceptional performance.</p>
                 </div>
               </div>
             </div>
@@ -203,28 +203,28 @@ const Careers = () => {
                 <CheckCircle className="h-5 w-5 text-accent-foreground mt-0.5 flex-shrink-0" />
                 <div>
                   <h3 className="font-semibold text-foreground mb-1">Family Atmosphere</h3>
-                  <p className="text-muted-foreground">We treat our employees like family with respect and care.</p>
+                  <p className="text-foreground">We treat our employees like family with respect and care.</p>
                 </div>
               </div>
               <div className="flex items-start gap-3">
                 <CheckCircle className="h-5 w-5 text-accent-foreground mt-0.5 flex-shrink-0" />
                 <div>
                   <h3 className="font-semibold text-foreground mb-1">Safety First</h3>
-                  <p className="text-muted-foreground">Comprehensive safety training and equipment provided.</p>
+                  <p className="text-foreground">Comprehensive safety training and equipment provided.</p>
                 </div>
               </div>
               <div className="flex items-start gap-3">
                 <CheckCircle className="h-5 w-5 text-accent-foreground mt-0.5 flex-shrink-0" />
                 <div>
                   <h3 className="font-semibold text-foreground mb-1">Continuous Learning</h3>
-                  <p className="text-muted-foreground">Ongoing training and development opportunities.</p>
+                  <p className="text-foreground">Ongoing training and development opportunities.</p>
                 </div>
               </div>
               <div className="flex items-start gap-3">
                 <CheckCircle className="h-5 w-5 text-accent-foreground mt-0.5 flex-shrink-0" />
                 <div>
                   <h3 className="font-semibold text-foreground mb-1">Recognition Programs</h3>
-                  <p className="text-muted-foreground">Regular appreciation events and employee recognition.</p>
+                  <p className="text-foreground">Regular appreciation events and employee recognition.</p>
                 </div>
               </div>
             </div>
@@ -238,17 +238,17 @@ const Careers = () => {
             <div>
               <div className="bg-primary text-primary-foreground rounded-full w-12 h-12 flex items-center justify-center mx-auto mb-4 text-xl font-bold">1</div>
               <h3 className="font-semibold text-foreground mb-2">Submit Application</h3>
-              <p className="text-muted-foreground">Apply online or call us directly to express your interest.</p>
+              <p className="text-foreground">Apply online or call us directly to express your interest.</p>
             </div>
             <div>
               <div className="bg-primary text-primary-foreground rounded-full w-12 h-12 flex items-center justify-center mx-auto mb-4 text-xl font-bold">2</div>
               <h3 className="font-semibold text-foreground mb-2">Interview Process</h3>
-              <p className="text-muted-foreground">Phone screening followed by in-person interview with our team.</p>
+              <p className="text-foreground">Phone screening followed by in-person interview with our team.</p>
             </div>
             <div>
               <div className="bg-primary text-primary-foreground rounded-full w-12 h-12 flex items-center justify-center mx-auto mb-4 text-xl font-bold">3</div>
               <h3 className="font-semibold text-foreground mb-2">Start Your Career</h3>
-              <p className="text-muted-foreground">Complete onboarding and begin your journey with Andrew Distribution.</p>
+              <p className="text-foreground">Complete onboarding and begin your journey with Andrew Distribution.</p>
             </div>
           </div>
         </div>
@@ -258,7 +258,7 @@ const Careers = () => {
           <h2 className="heading-lg text-primary mb-4">
             Ready to Start Your Career with Us?
           </h2>
-          <p className="body-large text-muted-foreground mb-6 max-w-2xl mx-auto">
+          <p className="body-large text-foreground mb-6 max-w-2xl mx-auto">
             Don't see a position that fits? We're always interested in talking to qualified candidates. 
             Send us your resume and let's discuss opportunities.
           </p>

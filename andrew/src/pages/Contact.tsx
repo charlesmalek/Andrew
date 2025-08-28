@@ -75,7 +75,7 @@ const Contact = () => {
                       <div className="text-center py-8">
                         <CheckCircle className="h-16 w-16 text-green-500 mx-auto mb-4" />
                         <h3 className="heading-sm text-green-600 mb-2">Message Sent!</h3>
-                        <p className="text-muted-foreground">
+                        <p className="text-foreground">
                           Thank you for contacting us. We'll respond within 24 hours.
                         </p>
                       </div>
@@ -189,7 +189,7 @@ const Contact = () => {
                       <MapPin className="h-5 w-5 text-accent-coral mt-1" />
                       <div>
                         <p className="font-medium">Main Office</p>
-                        <p className="text-muted-foreground">
+                        <p className="text-foreground">
                           2000 Anson Dr<br />
                           Melrose Park, IL 60160
                         </p>
@@ -200,7 +200,7 @@ const Contact = () => {
                       <Phone className="h-5 w-5 text-accent-coral" />
                       <div>
                         <p className="font-medium">Phone</p>
-                        <p className="text-muted-foreground">(708) 344-3200</p>
+                        <p className="text-foreground">(708) 344-3200</p>
                       </div>
                     </div>
                     
@@ -208,7 +208,7 @@ const Contact = () => {
                       <Mail className="h-5 w-5 text-accent-coral" />
                       <div>
                         <p className="font-medium">Email</p>
-                        <p className="text-muted-foreground">info@andrewdistribution.com</p>
+                        <p className="text-foreground">info@andrewdistribution.com</p>
                       </div>
                     </div>
                   </CardContent>
@@ -233,7 +233,7 @@ const Contact = () => {
                         </div>
                         <div className="flex justify-between">
                           <span>Sunday</span>
-                          <span className="text-muted-foreground">Closed</span>
+                          <span className="text-foreground">Closed</span>
                         </div>
                       </div>
                     </div>

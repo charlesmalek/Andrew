@@ -8,7 +8,7 @@ const Loading = () => {
           <Truck className="h-12 w-12 text-primary-foreground animate-pulse" />
         </div>
         <h2 className="heading-sm text-primary mb-2">Andrew Distribution</h2>
-        <p className="caption text-muted-foreground">Loading...</p>
+        <p className="caption text-foreground">Loading...</p>
         
         {/* Loading Animation */}
         <div className="mt-6 flex justify-center">

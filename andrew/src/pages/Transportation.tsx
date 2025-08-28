@@ -20,7 +20,7 @@ const Transportation = () => {
           <h1 className="heading-xl text-primary mb-6">
             Transportation & Logistics
           </h1>
-          <p className="body-large text-muted-foreground max-w-3xl mx-auto">
+          <p className="body-large text-foreground max-w-3xl mx-auto">
             Comprehensive transportation solutions across the Midwest with our fleet of 225+ vehicles. 
             Reliable, efficient, and tailored to your business needs.
           </p>
@@ -94,28 +94,28 @@ const Transportation = () => {
                 <CheckCircle className="h-5 w-5 text-accent-foreground mt-0.5 flex-shrink-0" />
                 <div>
                   <h3 className="font-semibold text-foreground mb-1">Freight Transportation</h3>
-                  <p className="text-muted-foreground">Full truckload and less-than-truckload shipping solutions.</p>
+                  <p className="text-foreground">Full truckload and less-than-truckload shipping solutions.</p>
                 </div>
               </div>
               <div className="flex items-start gap-3">
                 <CheckCircle className="h-5 w-5 text-accent-foreground mt-0.5 flex-shrink-0" />
                 <div>
                   <h3 className="font-semibold text-foreground mb-1">Expedited Delivery</h3>
-                  <p className="text-muted-foreground">Rush delivery services for time-sensitive shipments.</p>
+                  <p className="text-foreground">Rush delivery services for time-sensitive shipments.</p>
                 </div>
               </div>
               <div className="flex items-start gap-3">
                 <CheckCircle className="h-5 w-5 text-accent-foreground mt-0.5 flex-shrink-0" />
                 <div>
                   <h3 className="font-semibold text-foreground mb-1">Warehouse Solutions</h3>
-                  <p className="text-muted-foreground">Storage and distribution center services.</p>
+                  <p className="text-foreground">Storage and distribution center services.</p>
                 </div>
               </div>
               <div className="flex items-start gap-3">
                 <CheckCircle className="h-5 w-5 text-accent-foreground mt-0.5 flex-shrink-0" />
                 <div>
                   <h3 className="font-semibold text-foreground mb-1">Route Optimization</h3>
-                  <p className="text-muted-foreground">Advanced logistics planning for maximum efficiency.</p>
+                  <p className="text-foreground">Advanced logistics planning for maximum efficiency.</p>
                 </div>
               </div>
             </div>
@@ -128,28 +128,28 @@ const Transportation = () => {
                 <CheckCircle className="h-5 w-5 text-accent-foreground mt-0.5 flex-shrink-0" />
                 <div>
                   <h3 className="font-semibold text-foreground mb-1">30+ Years Experience</h3>
-                  <p className="text-muted-foreground">Decades of proven reliability in logistics and transportation.</p>
+                  <p className="text-foreground">Decades of proven reliability in logistics and transportation.</p>
                 </div>
               </div>
               <div className="flex items-start gap-3">
                 <CheckCircle className="h-5 w-5 text-accent-foreground mt-0.5 flex-shrink-0" />
                 <div>
                   <h3 className="font-semibold text-foreground mb-1">Advanced Technology</h3>
-                  <p className="text-muted-foreground">GPS tracking, automated dispatch, and real-time updates.</p>
+                  <p className="text-foreground">GPS tracking, automated dispatch, and real-time updates.</p>
                 </div>
               </div>
               <div className="flex items-start gap-3">
                 <CheckCircle className="h-5 w-5 text-accent-foreground mt-0.5 flex-shrink-0" />
                 <div>
                   <h3 className="font-semibold text-foreground mb-1">Flexible Service</h3>
-                  <p className="text-muted-foreground">Customizable solutions to meet your specific requirements.</p>
+                  <p className="text-foreground">Customizable solutions to meet your specific requirements.</p>
                 </div>
               </div>
               <div className="flex items-start gap-3">
                 <CheckCircle className="h-5 w-5 text-accent-foreground mt-0.5 flex-shrink-0" />
                 <div>
                   <h3 className="font-semibold text-foreground mb-1">24/7 Support</h3>
-                  <p className="text-muted-foreground">Round-the-clock customer service and dispatch support.</p>
+                  <p className="text-foreground">Round-the-clock customer service and dispatch support.</p>
                 </div>
               </div>
             </div>
@@ -161,7 +161,7 @@ const Transportation = () => {
           <h2 className="heading-lg text-primary mb-4">
             Ready to Streamline Your Transportation?
           </h2>
-          <p className="body-large text-muted-foreground mb-6 max-w-2xl mx-auto">
+          <p className="body-large text-foreground mb-6 max-w-2xl mx-auto">
             Contact our logistics experts to discuss your transportation needs and learn about our services.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">

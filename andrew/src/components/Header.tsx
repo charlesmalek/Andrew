@@ -55,7 +55,7 @@ const Header = () => {
             </div>
             <div>
               <h1 className="text-xl font-bold text-primary">Andrew Distribution</h1>
-              <p className="text-sm text-muted-foreground">Reliable. Professional. Trusted.</p>
+              <p className="text-sm text-foreground">Reliable. Professional. Trusted.</p>
             </div>
           </Link>
 

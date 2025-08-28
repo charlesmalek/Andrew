@@ -20,7 +20,7 @@ const Newspapers = () => {
           <h1 className="heading-xl text-primary mb-6">
             Newspaper Distribution
           </h1>
-          <p className="body-large text-muted-foreground max-w-3xl mx-auto">
+          <p className="body-large text-foreground max-w-3xl mx-auto">
             Specialized newspaper distribution services across the Midwest. Ensuring your publications 
             reach readers on time, every time with our dedicated distribution network.
           </p>
@@ -94,28 +94,28 @@ const Newspapers = () => {
                 <CheckCircle className="h-5 w-5 text-accent-foreground mt-0.5 flex-shrink-0" />
                 <div>
                   <h3 className="font-semibold text-foreground mb-1">Daily Newspaper Distribution</h3>
-                  <p className="text-muted-foreground">Regular daily delivery routes for newspapers and publications.</p>
+                  <p className="text-foreground">Regular daily delivery routes for newspapers and publications.</p>
                 </div>
               </div>
               <div className="flex items-start gap-3">
                 <CheckCircle className="h-5 w-5 text-accent-foreground mt-0.5 flex-shrink-0" />
                 <div>
                   <h3 className="font-semibold text-foreground mb-1">Retail Newsstand Delivery</h3>
-                  <p className="text-muted-foreground">Direct delivery to retail locations and newsstands.</p>
+                  <p className="text-foreground">Direct delivery to retail locations and newsstands.</p>
                 </div>
               </div>
               <div className="flex items-start gap-3">
                 <CheckCircle className="h-5 w-5 text-accent-foreground mt-0.5 flex-shrink-0" />
                 <div>
                   <h3 className="font-semibold text-foreground mb-1">Subscription Fulfillment</h3>
-                  <p className="text-muted-foreground">Direct-to-subscriber delivery services for home delivery.</p>
+                  <p className="text-foreground">Direct-to-subscriber delivery services for home delivery.</p>
                 </div>
               </div>
               <div className="flex items-start gap-3">
                 <CheckCircle className="h-5 w-5 text-accent-foreground mt-0.5 flex-shrink-0" />
                 <div>
                   <h3 className="font-semibold text-foreground mb-1">Return Handling</h3>
-                  <p className="text-muted-foreground">Efficient collection and processing of unsold newspapers.</p>
+                  <p className="text-foreground">Efficient collection and processing of unsold newspapers.</p>
                 </div>
               </div>
             </div>
@@ -128,28 +128,28 @@ const Newspapers = () => {
                 <CheckCircle className="h-5 w-5 text-accent-foreground mt-0.5 flex-shrink-0" />
                 <div>
                   <h3 className="font-semibold text-foreground mb-1">Proven Track Record</h3>
-                  <p className="text-muted-foreground">30+ years of successful newspaper distribution experience.</p>
+                  <p className="text-foreground">30+ years of successful newspaper distribution experience.</p>
                 </div>
               </div>
               <div className="flex items-start gap-3">
                 <CheckCircle className="h-5 w-5 text-accent-foreground mt-0.5 flex-shrink-0" />
                 <div>
                   <h3 className="font-semibold text-foreground mb-1">Timing Precision</h3>
-                  <p className="text-muted-foreground">Understanding the critical importance of publication timing.</p>
+                  <p className="text-foreground">Understanding the critical importance of publication timing.</p>
                 </div>
               </div>
               <div className="flex items-start gap-3">
                 <CheckCircle className="h-5 w-5 text-accent-foreground mt-0.5 flex-shrink-0" />
                 <div>
                   <h3 className="font-semibold text-foreground mb-1">Scalable Solutions</h3>
-                  <p className="text-muted-foreground">From local weeklies to major metropolitan dailies.</p>
+                  <p className="text-foreground">From local weeklies to major metropolitan dailies.</p>
                 </div>
               </div>
               <div className="flex items-start gap-3">
                 <CheckCircle className="h-5 w-5 text-accent-foreground mt-0.5 flex-shrink-0" />
                 <div>
                   <h3 className="font-semibold text-foreground mb-1">Cost-Effective</h3>
-                  <p className="text-muted-foreground">Competitive pricing with reliable service quality.</p>
+                  <p className="text-foreground">Competitive pricing with reliable service quality.</p>
                 </div>
               </div>
             </div>
@@ -162,15 +162,15 @@ const Newspapers = () => {
           <div className="grid md:grid-cols-3 gap-8 text-center">
             <div>
               <div className="text-3xl font-bold text-primary mb-2">225+</div>
-              <p className="text-muted-foreground">Delivery Vehicles</p>
+              <p className="text-foreground">Delivery Vehicles</p>
             </div>
             <div>
               <div className="text-3xl font-bold text-primary mb-2">15+</div>
-              <p className="text-muted-foreground">States Served</p>
+              <p className="text-foreground">States Served</p>
             </div>
             <div>
               <div className="text-3xl font-bold text-primary mb-2">99.5%</div>
-              <p className="text-muted-foreground">On-Time Delivery Rate</p>
+              <p className="text-foreground">On-Time Delivery Rate</p>
             </div>
           </div>
         </div>
@@ -180,7 +180,7 @@ const Newspapers = () => {
           <h2 className="heading-lg text-primary mb-4">
             Partner with Us for Your Newspaper Distribution
           </h2>
-          <p className="body-large text-muted-foreground mb-6 max-w-2xl mx-auto">
+          <p className="body-large text-foreground mb-6 max-w-2xl mx-auto">
             Let our experienced team handle your newspaper distribution needs while you focus on creating great content.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">

@@ -69,7 +69,7 @@ const FAQ = () => {
           <h2 className="heading-lg mb-6 text-primary font-heading">
             Frequently Asked Questions
           </h2>
-          <p className="body-large text-muted-foreground max-w-3xl mx-auto leading-relaxed">
+          <p className="body-large text-foreground max-w-3xl mx-auto leading-relaxed">
             Get quick answers to common questions about our distribution services, 
             coverage areas, and partnership opportunities.
           </p>
@@ -105,7 +105,7 @@ const FAQ = () => {
                       {openItems.includes(index) ? (
                         <ChevronUp className="h-5 w-5 text-accent-coral" />
                       ) : (
-                        <ChevronDown className="h-5 w-5 text-muted-foreground" />
+                        <ChevronDown className="h-5 w-5 text-foreground" />
                       )}
                     </div>
                   </div>
@@ -117,9 +117,9 @@ const FAQ = () => {
                     className="pt-0 pb-6 px-6 animate-in slide-in-from-top-2 duration-200"
                   >
                     <div className="border-t border-border pt-4">
-                      <p className="text-muted-foreground leading-relaxed">
-                        {faq.answer}
-                      </p>
+                                      <p className="text-foreground leading-relaxed">
+                  {faq.answer}
+                </p>
                     </div>
                   </CardContent>
                 )}
@@ -132,7 +132,7 @@ const FAQ = () => {
         <div className="text-center mt-16 fade-in-up">
           <div className="bg-gradient-subtle rounded-2xl p-8 max-w-2xl mx-auto">
             <h3 className="heading-md text-primary mb-4">Still Have Questions?</h3>
-            <p className="text-muted-foreground mb-6">
+            <p className="text-foreground mb-6">
               Our team is here to help. Contact us directly for personalized answers 
               to your specific distribution needs.
             </p>

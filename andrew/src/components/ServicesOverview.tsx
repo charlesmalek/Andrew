@@ -60,7 +60,7 @@ const ServicesOverview = () => {
           <h2 className="heading-lg mb-6 text-foreground font-heading">
             Complete Distribution Solutions
           </h2>
-          <p className="body-large text-muted-foreground max-w-3xl mx-auto leading-relaxed">
+          <p className="body-large text-foreground max-w-3xl mx-auto leading-relaxed">
             From newspapers to freight, we deliver comprehensive logistics solutions 
             across the Midwest with unmatched reliability and professional service.
           </p>
@@ -84,7 +84,7 @@ const ServicesOverview = () => {
                 <h3 className="heading-sm text-foreground font-heading">
                   {service.title}
                 </h3>
-                <p className="text-muted-foreground leading-relaxed">
+                <p className="text-foreground leading-relaxed">
                   {service.description}
                 </p>
               </div>
