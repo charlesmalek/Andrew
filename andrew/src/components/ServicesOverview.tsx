@@ -57,7 +57,7 @@ const ServicesOverview = () => {
       <div className="container-enterprise">
         {/* Section Header */}
         <div className="text-center mb-16 fade-in-up">
-          <h2 className="heading-lg mb-6 text-primary font-heading">
+          <h2 className="heading-lg mb-6 text-foreground font-heading">
             Complete Distribution Solutions
           </h2>
           <p className="body-large text-muted-foreground max-w-3xl mx-auto leading-relaxed">
@@ -75,13 +75,13 @@ const ServicesOverview = () => {
               style={{ animationDelay: `${index * 0.1}s` }}
             >
               {/* Service Icon */}
-              <div className="bg-primary/10 p-4 rounded-lg w-fit mb-6">
-                <service.icon className="h-8 w-8 text-primary" />
+              <div className="bg-foreground/10 p-4 rounded-lg w-fit mb-6">
+                <service.icon className="h-8 w-8 text-foreground" />
               </div>
 
               {/* Service Content */}
               <div className="space-y-4 mb-6 flex-grow">
-                <h3 className="heading-sm text-primary font-heading">
+                <h3 className="heading-sm text-foreground font-heading">
                   {service.title}
                 </h3>
                 <p className="text-muted-foreground leading-relaxed">
@@ -93,7 +93,7 @@ const ServicesOverview = () => {
               <div className="space-y-3 mb-8">
                 {service.features.map((feature) => (
                   <div key={feature} className="flex items-center gap-2">
-                    <div className="w-1.5 h-1.5 bg-accent-coral rounded-full"></div>
+                    <div className="w-1.5 h-1.5 bg-foreground rounded-full"></div>
                     <span className="text-sm text-foreground">{feature}</span>
                   </div>
                 ))}
