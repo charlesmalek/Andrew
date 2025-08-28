@@ -48,7 +48,7 @@ const BrandCarousel = () => {
           >
             <div className="flex items-center gap-3 px-4 py-2 opacity-70 hover:opacity-100 transition-opacity duration-300">
               <brand.logo className="h-6 w-auto md:h-8 lg:h-10" />
-              <span className="text-sm md:text-base lg:text-lg font-medium text-foreground whitespace-nowrap">
+              <span className="text-sm md:text-base lg:text-lg font-medium text-current whitespace-nowrap">
                 {brand.name}
               </span>
             </div>

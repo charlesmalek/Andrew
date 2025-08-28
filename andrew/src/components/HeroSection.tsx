@@ -7,13 +7,7 @@ import {
   TrendingUp 
 } from "lucide-react";
 import heroImage from "@/assets/andrew-fleet-final.jpg";
-import { 
-  NewYorkTimesLogo, 
-  WallStreetJournalLogo, 
-  LegoLogo, 
-  StarbucksLogo, 
-  JewelOscoLogo 
-} from "@/assets/logos";
+import BrandCarousel from "./BrandCarousel";
 
 const HeroSection = () => {
   const stats = [
@@ -68,27 +62,8 @@ const HeroSection = () => {
                 <p className="text-sm text-primary-foreground/80 mb-4">
                   Trusted by leading brands
                 </p>
-                <div className="flex flex-wrap items-center gap-6 text-primary-foreground/60">
-                  <div className="flex items-center gap-2">
-                    <NewYorkTimesLogo className="h-5 w-auto opacity-70" />
-                    <span className="text-sm font-medium">New York Times</span>
-                  </div>
-                  <div className="flex items-center gap-2">
-                    <WallStreetJournalLogo className="h-4 w-auto opacity-70" />
-                    <span className="text-sm font-medium">Wall Street Journal</span>
-                  </div>
-                  <div className="flex items-center gap-2">
-                    <LegoLogo className="h-5 w-auto opacity-70" />
-                    <span className="text-sm font-medium">LEGO</span>
-                  </div>
-                  <div className="flex items-center gap-2">
-                    <StarbucksLogo className="h-6 w-auto opacity-70" />
-                    <span className="text-sm font-medium">Starbucks</span>
-                  </div>
-                  <div className="flex items-center gap-2">
-                    <JewelOscoLogo className="h-4 w-auto opacity-70" />
-                    <span className="text-sm font-medium">Jewel-Osco</span>
-                  </div>
+                <div className="text-primary-foreground/60">
+                  <BrandCarousel />
                 </div>
               </div>
             </div>
