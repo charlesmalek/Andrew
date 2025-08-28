@@ -35,7 +35,7 @@ const BrandCarousel = () => {
   const duplicatedBrands = [...brands, ...brands, ...brands];
 
   return (
-    <div className="relative overflow-hidden bg-transparent py-8 md:py-12 lg:py-16">
+    <div className="relative overflow-hidden bg-transparent py-12 md:py-16 lg:py-20">
       <div 
         ref={carouselRef}
         className="flex items-center gap-12 md:gap-16 lg:gap-20 animate-scroll"
@@ -50,11 +50,11 @@ const BrandCarousel = () => {
             key={`${brand.name}-${index}`}
             className="flex-shrink-0 flex items-center justify-center"
           >
-            <div className="flex items-center justify-center px-6 py-8 md:py-10 lg:py-12 opacity-80 hover:opacity-100 transition-all duration-300 hover:scale-105">
+            <div className="flex items-center justify-center px-8 py-10 md:py-12 lg:py-16 opacity-80 hover:opacity-100 transition-all duration-300 hover:scale-105">
               <img 
                 src={brand.logo} 
                 alt={brand.alt}
-                className="h-12 w-auto md:h-16 lg:h-20 object-contain drop-shadow-lg"
+                className="h-16 w-auto md:h-20 lg:h-24 object-contain drop-shadow-lg"
                 onError={(e) => {
                   // Fallback to text if image fails to load
                   e.currentTarget.style.display = 'none';
