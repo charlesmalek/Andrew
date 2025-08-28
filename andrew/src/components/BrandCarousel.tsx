@@ -1,24 +1,35 @@
 import { useState, useEffect, useRef } from 'react';
-import { 
-  NewYorkTimesLogo, 
-  WallStreetJournalLogo, 
-  LegoLogo, 
-  StarbucksLogo, 
-  JewelOscoLogo,
-  MarriottLogo 
-} from "@/assets/logos";
 
 const BrandCarousel = () => {
   const [isPaused, setIsPaused] = useState(false);
   const carouselRef = useRef<HTMLDivElement>(null);
 
   const brands = [
-    { name: "New York Times", logo: NewYorkTimesLogo },
-    { name: "Wall Street Journal", logo: WallStreetJournalLogo },
-    { name: "LEGO", logo: LegoLogo },
-    { name: "Starbucks", logo: StarbucksLogo },
-    { name: "Jewel-Osco", logo: JewelOscoLogo },
-    { name: "Marriott Hotels", logo: MarriottLogo },
+    { 
+      name: "Jewel-Osco", 
+      logo: "/images/jewel-osco-logo.svg",
+      alt: "Jewel-Osco Logo"
+    },
+    { 
+      name: "LEGO", 
+      logo: "/images/lego-logo.svg",
+      alt: "LEGO Logo"
+    },
+    { 
+      name: "Starbucks", 
+      logo: "/images/starbucks-logo.svg",
+      alt: "Starbucks Logo"
+    },
+    { 
+      name: "The New York Times", 
+      logo: "/images/new-york-times-logo.svg",
+      alt: "The New York Times Logo"
+    },
+    { 
+      name: "Wall Street Journal", 
+      logo: "/images/wsj-logo.svg",
+      alt: "Wall Street Journal Logo"
+    },
   ];
 
   // Duplicate brands for seamless infinite scroll
@@ -47,7 +58,15 @@ const BrandCarousel = () => {
             className="flex-shrink-0 flex items-center justify-center"
           >
             <div className="flex items-center gap-3 px-4 py-2 opacity-70 hover:opacity-100 transition-opacity duration-300">
-              <brand.logo className="h-6 w-auto md:h-8 lg:h-10" />
+              <img 
+                src={brand.logo} 
+                alt={brand.alt}
+                className="h-6 w-auto md:h-8 lg:h-10 object-contain"
+                onError={(e) => {
+                  // Fallback to text if image fails to load
+                  e.currentTarget.style.display = 'none';
+                }}
+              />
               <span className="text-sm md:text-base lg:text-lg font-medium text-current whitespace-nowrap">
                 {brand.name}
               </span>
