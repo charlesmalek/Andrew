@@ -33,10 +33,10 @@
     --accent-coral-foreground: 0 0% 98%;
     --accent-coral-dark: 220 15% 8%;
 
-    /* Medium Blue #1E6BB8 - Links & Interactive */
-    --accent-blue: 213 73% 42%;
+    /* Medium Grey - Links & Interactive */
+    --accent-blue: 220 15% 15%;
     --accent-blue-foreground: 0 0% 98%;
-    --accent-blue-light: 213 65% 50%;
+    --accent-blue-light: 220 15% 25%;
 
     /* Supporting Colors */
     --muted: 0 0% 96%;
