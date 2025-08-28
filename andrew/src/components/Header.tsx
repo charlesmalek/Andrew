@@ -80,7 +80,7 @@ const Header = () => {
               onMouseLeave={() => {
                 const timeout = setTimeout(() => {
                   setActiveDropdown(null);
-                }, 150);
+                }, 300);
                 setDropdownTimeout(timeout);
               }}
             >
@@ -90,31 +90,43 @@ const Header = () => {
               </button>
               
               {activeDropdown === "services" && (
-                <div 
-                  className="absolute top-full left-0 mt-1 w-64 bg-card border border-border rounded-lg shadow-enterprise py-2 z-50"
-                  onMouseEnter={() => {
-                    if (dropdownTimeout) {
-                      clearTimeout(dropdownTimeout);
-                      setDropdownTimeout(null);
-                    }
-                  }}
-                  onMouseLeave={() => {
-                    const timeout = setTimeout(() => {
-                      setActiveDropdown(null);
-                    }, 150);
-                    setDropdownTimeout(timeout);
-                  }}
-                >
-                  {services.map((service) => (
-                    <Link
-                      key={service.name}
-                      to={service.href}
-                      className="block px-4 py-3 text-sm hover:bg-accent hover:text-accent-foreground transition-colors"
-                    >
-                      {service.name}
-                    </Link>
-                  ))}
-                </div>
+                <>
+                  {/* Invisible buffer zone above dropdown */}
+                  <div 
+                    className="absolute top-full left-0 w-64 h-2 bg-transparent"
+                    onMouseEnter={() => {
+                      if (dropdownTimeout) {
+                        clearTimeout(dropdownTimeout);
+                        setDropdownTimeout(null);
+                      }
+                    }}
+                  />
+                  <div 
+                    className="absolute top-full left-0 mt-1 w-64 bg-card border border-border rounded-lg shadow-enterprise py-2 z-50"
+                    onMouseEnter={() => {
+                      if (dropdownTimeout) {
+                        clearTimeout(dropdownTimeout);
+                        setDropdownTimeout(null);
+                      }
+                    }}
+                    onMouseLeave={() => {
+                      const timeout = setTimeout(() => {
+                        setActiveDropdown(null);
+                      }, 300);
+                      setDropdownTimeout(timeout);
+                    }}
+                  >
+                    {services.map((service) => (
+                      <Link
+                        key={service.name}
+                        to={service.href}
+                        className="block px-4 py-3 text-sm hover:bg-accent hover:text-accent-foreground transition-colors"
+                      >
+                        {service.name}
+                      </Link>
+                    ))}
+                  </div>
+                </>
               )}
             </div>
 
