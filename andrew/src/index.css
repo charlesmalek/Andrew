@@ -8,7 +8,7 @@
     transform: translateX(0);
   }
   100% {
-    transform: translateX(-50%);
+    transform: translateX(-25%);
   }
 }
 
@@ -22,6 +22,8 @@
   -webkit-transform: translateZ(0);
   -webkit-perspective: 1000px;
   perspective: 1000px;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
 }
 
 /* Andrew Distribution Design System - Professional Brand Implementation */
