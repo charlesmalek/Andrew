@@ -31,11 +31,11 @@ const BrandCarousel = () => {
     },
   ];
 
-  // Sextuple the brands for perfect seamless infinite scroll
-  const duplicatedBrands = [...brands, ...brands, ...brands, ...brands, ...brands, ...brands];
+  // Triple the brands for perfect seamless infinite scroll
+  const duplicatedBrands = [...brands, ...brands, ...brands];
 
   return (
-    <div className="relative overflow-hidden bg-transparent py-12 md:py-16 lg:py-20">
+    <div className="relative overflow-hidden bg-transparent py-16 md:py-20 lg:py-24">
       <div 
         ref={carouselRef}
         className="flex items-center gap-4 md:gap-6 lg:gap-8 carousel-seamless"
@@ -45,11 +45,11 @@ const BrandCarousel = () => {
             key={`${brand.name}-${index}`}
             className="flex-shrink-0 flex items-center justify-center"
           >
-            <div className="flex items-center justify-center px-2 py-10 md:py-12 lg:py-16 opacity-80 hover:opacity-100 transition-all duration-300 hover:scale-105">
+            <div className="flex items-center justify-center px-2 py-12 md:py-16 lg:py-20 opacity-80 hover:opacity-100 transition-all duration-300 hover:scale-105">
               <img 
                 src={brand.logo} 
                 alt={brand.alt}
-                className="h-16 w-auto md:h-20 lg:h-24 object-contain drop-shadow-lg"
+                className="h-20 w-auto md:h-24 lg:h-28 object-contain drop-shadow-lg"
                 onError={(e) => {
                   // Fallback to text if image fails to load
                   e.currentTarget.style.display = 'none';
