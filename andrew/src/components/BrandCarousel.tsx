@@ -38,9 +38,9 @@ const BrandCarousel = () => {
     <div className="relative overflow-hidden bg-transparent py-12 md:py-16 lg:py-20">
       <div 
         ref={carouselRef}
-        className="flex items-center gap-8 md:gap-10 lg:gap-12 animate-scroll"
+        className="flex items-center gap-4 md:gap-6 lg:gap-8 animate-scroll"
         style={{
-          animationDuration: '5s',
+          animationDuration: '3s',
           animationIterationCount: 'infinite',
           animationTimingFunction: 'linear',
           willChange: 'transform',
@@ -52,7 +52,7 @@ const BrandCarousel = () => {
             key={`${brand.name}-${index}`}
             className="flex-shrink-0 flex items-center justify-center"
           >
-            <div className="flex items-center justify-center px-4 py-10 md:py-12 lg:py-16 opacity-80 hover:opacity-100 transition-all duration-300 hover:scale-105">
+            <div className="flex items-center justify-center px-2 py-10 md:py-12 lg:py-16 opacity-80 hover:opacity-100 transition-all duration-300 hover:scale-105">
               <img 
                 src={brand.logo} 
                 alt={brand.alt}
