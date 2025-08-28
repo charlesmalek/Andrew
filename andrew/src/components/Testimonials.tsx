@@ -1,5 +1,6 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Star, Quote } from "lucide-react";
+import BrandCarousel from "./BrandCarousel";
 
 const Testimonials = () => {
   const testimonials = [
@@ -77,6 +78,15 @@ const Testimonials = () => {
           ))}
         </div>
 
+        {/* Brand Carousel */}
+        <div className="mt-16 fade-in-up">
+          <div className="text-center mb-8">
+            <p className="caption text-foreground">
+              Trusted by leading brands across the Midwest
+            </p>
+          </div>
+          <BrandCarousel />
+        </div>
 
       </div>
     </section>
