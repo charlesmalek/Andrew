@@ -100,7 +100,7 @@ const ServicesOverview = () => {
               </div>
 
               {/* CTA */}
-              <Button className="w-full group mt-auto bg-foreground text-primary-foreground hover:bg-foreground/90 shadow-button hover:shadow-enterprise">
+              <Button className="w-full group mt-auto bg-accent-coral text-accent-coral-foreground hover:bg-accent-coral-dark shadow-button hover:shadow-lift btn-hover-lift">
                 Learn More
                 <ArrowRight className="h-4 w-4 group-hover:translate-x-1 transition-transform" />
               </Button>
