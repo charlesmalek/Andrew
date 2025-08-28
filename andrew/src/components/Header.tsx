@@ -13,6 +13,7 @@ import {
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [activeDropdown, setActiveDropdown] = useState<string | null>(null);
+  const [dropdownTimeout, setDropdownTimeout] = useState<NodeJS.Timeout | null>(null);
 
   const services = [
     { name: "Transportation & Logistics", href: "/transportation" },
@@ -69,8 +70,19 @@ const Header = () => {
             {/* Services Dropdown */}
             <div 
               className="relative"
-              onMouseEnter={() => setActiveDropdown("services")}
-              onMouseLeave={() => setActiveDropdown(null)}
+              onMouseEnter={() => {
+                if (dropdownTimeout) {
+                  clearTimeout(dropdownTimeout);
+                  setDropdownTimeout(null);
+                }
+                setActiveDropdown("services");
+              }}
+              onMouseLeave={() => {
+                const timeout = setTimeout(() => {
+                  setActiveDropdown(null);
+                }, 150);
+                setDropdownTimeout(timeout);
+              }}
             >
               <button className="flex items-center gap-1 text-foreground hover:text-primary transition-colors">
                 Services
@@ -78,7 +90,21 @@ const Header = () => {
               </button>
               
               {activeDropdown === "services" && (
-                <div className="absolute top-full left-0 mt-2 w-64 bg-card border border-border rounded-lg shadow-enterprise py-2 z-50">
+                <div 
+                  className="absolute top-full left-0 mt-1 w-64 bg-card border border-border rounded-lg shadow-enterprise py-2 z-50"
+                  onMouseEnter={() => {
+                    if (dropdownTimeout) {
+                      clearTimeout(dropdownTimeout);
+                      setDropdownTimeout(null);
+                    }
+                  }}
+                  onMouseLeave={() => {
+                    const timeout = setTimeout(() => {
+                      setActiveDropdown(null);
+                    }, 150);
+                    setDropdownTimeout(timeout);
+                  }}
+                >
                   {services.map((service) => (
                     <Link
                       key={service.name}
