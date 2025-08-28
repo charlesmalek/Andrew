@@ -31,8 +31,8 @@ const BrandCarousel = () => {
     },
   ];
 
-  // Quadruple the brands for seamless infinite scroll
-  const duplicatedBrands = [...brands, ...brands, ...brands, ...brands];
+  // Quintuple the brands for seamless infinite scroll
+  const duplicatedBrands = [...brands, ...brands, ...brands, ...brands, ...brands];
 
   return (
     <div className="relative overflow-hidden bg-transparent py-12 md:py-16 lg:py-20">
@@ -43,6 +43,8 @@ const BrandCarousel = () => {
           animationDuration: '5s',
           animationIterationCount: 'infinite',
           animationTimingFunction: 'linear',
+          willChange: 'transform',
+          transform: 'translateZ(0)',
         }}
       >
         {duplicatedBrands.map((brand, index) => (
