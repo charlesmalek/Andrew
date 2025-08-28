@@ -8,14 +8,14 @@
   :root {
     /* New Brand Colors - Professional & Modern */
     --background: 0 0% 100%;
-    --foreground: 0 0% 0%;
+    --foreground: 220 15% 25%;
 
     /* Trust & Reliability Theme */
     --card: 0 0% 100%;
-    --card-foreground: 0 0% 0%;
+    --card-foreground: 220 15% 25%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 0 0% 0%;
+    --popover-foreground: 220 15% 25%;
 
     /* Primary: Deep Navy Blue #0A2E5A - Trust & Professionalism */
     --primary: 213 75% 20%;
@@ -23,15 +23,15 @@
     --primary-light: 213 65% 28%;
     --primary-lighter: 213 55% 35%;
 
-    /* Secondary: Off-White & Jet Black */
+    /* Secondary: Off-White & Sophisticated Grey */
     --secondary: 0 0% 96%;
-    --secondary-foreground: 0 0% 0%;
-    --secondary-dark: 0 0% 0%;
+    --secondary-foreground: 220 15% 25%;
+    --secondary-dark: 220 15% 35%;
 
-    /* Accent: Jet Black - CTAs & Energy */
-    --accent-coral: 0 0% 0%;
+    /* Accent: Sophisticated Grey - CTAs & Energy */
+    --accent-coral: 220 15% 25%;
     --accent-coral-foreground: 0 0% 98%;
-    --accent-coral-dark: 0 0% 0%;
+    --accent-coral-dark: 220 15% 15%;
 
     /* Medium Blue #1E6BB8 - Links & Interactive */
     --accent-blue: 213 73% 42%;
@@ -43,18 +43,18 @@
     --muted-foreground: 210 100% 85%;
 
     --accent: 0 0% 96%;
-    --accent-foreground: 0 0% 0%;
+    --accent-foreground: 220 15% 25%;
 
     --destructive: 0 84% 60%;
     --destructive-foreground: 0 0% 98%;
 
-    --border: 0 0% 0%;
-    --input: 0 0% 0%;
+    --border: 220 15% 25%;
+    --input: 220 15% 25%;
     --ring: 213 75% 20%;
 
     /* Modern Gradients */
     --gradient-hero: linear-gradient(135deg, hsl(213 75% 20%), hsl(213 65% 28%));
-    --gradient-coral: linear-gradient(135deg, hsl(0 0% 0%), hsl(0 0% 0%));
+    --gradient-coral: linear-gradient(135deg, hsl(220 15% 25%), hsl(220 15% 15%));
     --gradient-subtle: linear-gradient(180deg, hsl(0 0% 100%), hsl(0 0% 96%));
 
     /* Professional Shadows */
@@ -73,31 +73,31 @@
   .dark {
     /* Dark mode for enterprise environments */
     --background: 213 75% 8%;
-    --foreground: 0 0% 0%;
+    --foreground: 220 15% 85%;
 
     --card: 213 75% 10%;
-    --card-foreground: 0 0% 0%;
+    --card-foreground: 220 15% 85%;
 
     --popover: 213 75% 10%;
-    --popover-foreground: 0 0% 0%;
+    --popover-foreground: 220 15% 85%;
 
-    --primary: 0 0% 0%;
+    --primary: 220 15% 85%;
     --primary-foreground: 213 75% 20%;
 
     --secondary: 213 35% 15%;
-    --secondary-foreground: 0 0% 0%;
+    --secondary-foreground: 220 15% 85%;
 
     --muted: 213 35% 15%;
     --muted-foreground: 210 100% 75%;
 
     --accent: 213 35% 15%;
-    --accent-foreground: 0 0% 0%;
+    --accent-foreground: 220 15% 85%;
 
     --destructive: 0 75% 55%;
-    --destructive-foreground: 0 0% 0%;
+    --destructive-foreground: 220 15% 85%;
 
-    --border: 0 0% 0%;
-    --input: 0 0% 0%;
+    --border: 220 15% 25%;
+    --input: 220 15% 25%;
     --ring: 0 75% 70%;
 
     /* Dark mode gradients */
