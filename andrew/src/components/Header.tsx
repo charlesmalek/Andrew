@@ -5,9 +5,7 @@ import {
   ChevronDown, 
   Menu, 
   X, 
-  Truck, 
-  Phone,
-  Mail
+  Truck
 } from "lucide-react";
 
 const Header = () => {
@@ -24,26 +22,7 @@ const Header = () => {
 
   return (
     <header className="sticky top-0 z-50 bg-card/95 backdrop-blur-sm border-b border-border">
-      {/* Top Contact Bar */}
-      <div className="bg-primary text-primary-foreground">
-        <div className="container-enterprise">
-          <div className="flex items-center justify-between py-2 text-sm">
-            <div className="flex items-center gap-6">
-              <div className="flex items-center gap-2">
-                <Phone className="h-4 w-4" />
-                <span>(708) 344-3200</span>
-              </div>
-              <div className="flex items-center gap-2">
-                <Mail className="h-4 w-4" />
-                <span>info@andrewdistribution.com</span>
-              </div>
-            </div>
-            <div className="hidden md:block">
-              <span>Serving the Midwest for 30+ Years</span>
-            </div>
-          </div>
-        </div>
-      </div>
+
 
       {/* Main Navigation */}
       <div className="container-enterprise">
