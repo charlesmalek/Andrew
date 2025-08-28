@@ -100,7 +100,7 @@ const ServicesOverview = () => {
               </div>
 
               {/* CTA */}
-              <Button variant="enterprise" className="w-full group mt-auto">
+              <Button className="w-full group mt-auto bg-foreground text-primary-foreground hover:bg-foreground/90 shadow-button hover:shadow-enterprise">
                 Learn More
                 <ArrowRight className="h-4 w-4 group-hover:translate-x-1 transition-transform" />
               </Button>
@@ -126,8 +126,8 @@ const ServicesOverview = () => {
                 className="text-center fade-in-up"
                 style={{ animationDelay: `${index * 0.1}s` }}
               >
-                <div className="bg-accent-coral/20 p-4 rounded-lg w-fit mx-auto mb-4">
-                  <benefit.icon className="h-8 w-8 text-accent-coral" />
+                <div className="bg-accent-orange/20 p-4 rounded-lg w-fit mx-auto mb-4">
+                  <benefit.icon className="h-8 w-8 text-accent-orange" />
                 </div>
                 <h4 className="text-xl font-semibold mb-2 font-heading">{benefit.title}</h4>
                 <p className="text-primary-foreground/80">{benefit.description}</p>
