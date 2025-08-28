@@ -40,7 +40,7 @@ const BrandCarousel = () => {
         ref={carouselRef}
         className="flex items-center gap-12 md:gap-16 lg:gap-20 animate-scroll"
         style={{
-          animationDuration: '15s',
+          animationDuration: '8s',
           animationIterationCount: 'infinite',
           animationTimingFunction: 'linear',
         }}
