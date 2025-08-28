@@ -156,6 +156,59 @@ const Magazines = () => {
           </div>
         </div>
 
+        {/* Magazine Sales Reports */}
+        <div id="sales-reports" className="bg-card border border-border rounded-lg p-8 mb-16">
+          <h2 className="heading-lg text-primary text-center mb-8">Magazine Sales Reports</h2>
+          <div className="grid md:grid-cols-2 gap-8">
+            <div>
+              <h3 className="heading-sm text-primary mb-4">Comprehensive Sales Analytics</h3>
+              <p className="text-muted-foreground mb-4">
+                Get detailed insights into your magazine performance with our comprehensive sales reporting system. 
+                Track sales trends, identify top-performing locations, and optimize your distribution strategy.
+              </p>
+              <ul className="space-y-2 text-muted-foreground">
+                <li className="flex items-center gap-2">
+                  <CheckCircle className="h-4 w-4 text-accent-coral" />
+                  <span>Weekly and monthly sales reports</span>
+                </li>
+                <li className="flex items-center gap-2">
+                  <CheckCircle className="h-4 w-4 text-accent-coral" />
+                  <span>Retail location performance analysis</span>
+                </li>
+                <li className="flex items-center gap-2">
+                  <CheckCircle className="h-4 w-4 text-accent-coral" />
+                  <span>Return rate tracking and analysis</span>
+                </li>
+                <li className="flex items-center gap-2">
+                  <CheckCircle className="h-4 w-4 text-accent-coral" />
+                  <span>Market trend identification</span>
+                </li>
+                <li className="flex items-center gap-2">
+                  <CheckCircle className="h-4 w-4 text-accent-coral" />
+                  <span>Custom reporting options</span>
+                </li>
+              </ul>
+            </div>
+            <div>
+              <h3 className="heading-sm text-primary mb-4">Digital Access</h3>
+              <p className="text-muted-foreground mb-4">
+                Access your sales reports anytime, anywhere through our secure online portal. 
+                Download reports in multiple formats and share insights with your team.
+              </p>
+              <div className="bg-accent p-4 rounded-lg">
+                <h4 className="font-semibold text-foreground mb-2">Report Features:</h4>
+                <ul className="text-sm text-muted-foreground space-y-1">
+                  <li>• Real-time sales data</li>
+                  <li>• Geographic performance mapping</li>
+                  <li>• Historical trend analysis</li>
+                  <li>• Automated report delivery</li>
+                  <li>• Export to Excel, PDF, and CSV</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
         {/* Publication Types */}
         <div className="bg-card border border-border rounded-lg p-8 mb-16">
           <h2 className="heading-lg text-primary text-center mb-8">Publications We Handle</h2>

@@ -44,6 +44,11 @@ export const SERVICES = [
     href: ROUTES.MAGAZINES,
     description: "Magazine and book distribution services"
   },
+  { 
+    name: "Magazine Sales Reports", 
+    href: `${ROUTES.MAGAZINES}#sales-reports`,
+    description: "Comprehensive sales analytics and reporting"
+  },
 ] as const;
 
 // Navigation menu items
