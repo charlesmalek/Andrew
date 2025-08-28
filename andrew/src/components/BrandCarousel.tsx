@@ -31,11 +31,11 @@ const BrandCarousel = () => {
     },
   ];
 
-  // Quadruple the brands for perfect seamless infinite scroll
-  const duplicatedBrands = [...brands, ...brands, ...brands, ...brands];
+  // Quintuple the brands for perfect seamless infinite scroll
+  const duplicatedBrands = [...brands, ...brands, ...brands, ...brands, ...brands];
 
   return (
-    <div className="relative overflow-hidden bg-transparent py-16 md:py-20 lg:py-24">
+    <div className="relative overflow-hidden bg-transparent py-16 md:py-20 lg:py-24" style={{ maskImage: 'linear-gradient(to right, transparent, black 10%, black 90%, transparent)' }}>
       <div 
         ref={carouselRef}
                   className="flex items-center gap-2 md:gap-4 lg:gap-6 carousel-seamless"
