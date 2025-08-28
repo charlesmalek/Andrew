@@ -8,13 +8,13 @@
     transform: translateX(0);
   }
   100% {
-    transform: translateX(-40%);
+    transform: translateX(-20%);
   }
 }
 
 /* Ensure seamless carousel animation */
 .carousel-seamless {
-  animation: scroll 3s linear infinite;
+  animation: scroll 4s linear infinite;
   will-change: transform;
   backface-visibility: hidden;
   -webkit-backface-visibility: hidden;
