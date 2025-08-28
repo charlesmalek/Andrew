@@ -1,13 +1,5 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Star, Quote } from "lucide-react";
-import { 
-  NewYorkTimesLogo, 
-  WallStreetJournalLogo, 
-  LegoLogo, 
-  StarbucksLogo, 
-  JewelOscoLogo,
-  MarriottLogo 
-} from "@/assets/logos";
 
 const Testimonials = () => {
   const testimonials = [
@@ -85,38 +77,7 @@ const Testimonials = () => {
           ))}
         </div>
 
-        {/* Trust Indicators */}
-        <div className="mt-16 text-center fade-in-up">
-          <p className="caption text-foreground mb-6">
-            Trusted by leading brands across the Midwest
-          </p>
-          <div className="flex flex-wrap justify-center items-center gap-8 text-foreground">
-            <div className="flex items-center gap-2">
-              <NewYorkTimesLogo className="h-5 w-auto opacity-60" />
-              <span className="text-lg font-semibold">New York Times</span>
-            </div>
-            <div className="flex items-center gap-2">
-              <WallStreetJournalLogo className="h-4 w-auto opacity-60" />
-              <span className="text-lg font-semibold">Wall Street Journal</span>
-            </div>
-            <div className="flex items-center gap-2">
-              <LegoLogo className="h-5 w-auto opacity-60" />
-              <span className="text-lg font-semibold">LEGO</span>
-            </div>
-            <div className="flex items-center gap-2">
-              <StarbucksLogo className="h-6 w-auto opacity-60" />
-              <span className="text-lg font-semibold">Starbucks</span>
-            </div>
-            <div className="flex items-center gap-2">
-              <JewelOscoLogo className="h-4 w-auto opacity-60" />
-              <span className="text-lg font-semibold">Jewel-Osco</span>
-            </div>
-            <div className="flex items-center gap-2">
-              <MarriottLogo className="h-4 w-auto opacity-60" />
-              <span className="text-lg font-semibold">Marriott Hotels</span>
-            </div>
-          </div>
-        </div>
+
       </div>
     </section>
   );
