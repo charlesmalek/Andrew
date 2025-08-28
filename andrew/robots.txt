@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://charlesmalek.github.io/Andrew/sitemap.xml

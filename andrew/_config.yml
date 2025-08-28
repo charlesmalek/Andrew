@@ -1,0 +1,41 @@
+title: Andrew Distribution
+description: Reliable distribution solutions across the Midwest
+baseurl: "/Andrew"
+url: "https://charlesmalek.github.io"
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+permalink: pretty
+
+# Collections
+collections:
+  pages:
+    output: true
+    permalink: /:path/
+
+# Defaults
+defaults:
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "default"
+
+# Plugins
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+# Exclude from processing
+exclude:
+  - node_modules
+  - src
+  - package.json
+  - package-lock.json
+  - vite.config.ts
+  - tsconfig.json
+  - tailwind.config.ts
+  - postcss.config.js
+  - .github
+  - README.md

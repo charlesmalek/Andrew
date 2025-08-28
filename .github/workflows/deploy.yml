@@ -34,10 +34,26 @@ jobs:
           cd andrew
           npm ci
           
-      - name: Build
+      - name: Build React App
         run: |
           cd andrew
           npm run build
+          
+      - name: Setup Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: '3.2'
+          bundler-cache: true
+          
+      - name: Install Jekyll
+        run: |
+          cd andrew
+          gem install jekyll jekyll-seo-tag jekyll-sitemap
+          
+      - name: Build Jekyll Site
+        run: |
+          cd andrew
+          jekyll build --source . --destination _site
           
       - name: Setup Pages
         uses: actions/configure-pages@v4
@@ -45,7 +61,7 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: andrew/dist
+          path: andrew/_site
 
   deploy:
     environment:
