@@ -7,27 +7,27 @@ const BrandCarousel = () => {
   const brands = [
     { 
       name: "Jewel-Osco", 
-      logo: "/images/jewel-osco-logo.svg",
+      logo: "/images/Jewel Osco.svg.png",
       alt: "Jewel-Osco Logo"
     },
     { 
       name: "LEGO", 
-      logo: "/images/lego-logo.svg",
+      logo: "/images/Lego.png",
       alt: "LEGO Logo"
     },
     { 
       name: "Starbucks", 
-      logo: "/images/starbucks-logo.svg",
+      logo: "/images/Starbuks.svg.png",
       alt: "Starbucks Logo"
     },
     { 
       name: "The New York Times", 
-      logo: "/images/new-york-times-logo.svg",
+      logo: "/images/The New York Times.png",
       alt: "The New York Times Logo"
     },
     { 
       name: "Wall Street Journal", 
-      logo: "/images/wsj-logo.svg",
+      logo: "/images/WSJ.png",
       alt: "Wall Street Journal Logo"
     },
   ];
