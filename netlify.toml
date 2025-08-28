@@ -1,6 +1,6 @@
 [build]
   publish = "andrew/dist"
-  command = "cd andrew && npm run build"
+  command = "cd andrew && npm ci && npm run build"
 
 [build.environment]
   NODE_VERSION = "18"
