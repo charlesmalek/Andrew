@@ -40,6 +40,11 @@ export default {
 					foreground: 'hsl(var(--accent-coral-foreground))',
 					dark: 'hsl(var(--accent-coral-dark))'
 				},
+				'accent-orange': {
+					DEFAULT: 'hsl(var(--accent-orange))',
+					foreground: 'hsl(var(--accent-orange-foreground))',
+					dark: 'hsl(var(--accent-orange-dark))'
+				},
 				'accent-blue': {
 					DEFAULT: 'hsl(var(--accent-blue))',
 					foreground: 'hsl(var(--accent-blue-foreground))',
@@ -64,7 +69,8 @@ export default {
 				card: {
 					DEFAULT: 'hsl(var(--card))',
 					foreground: 'hsl(var(--card-foreground))'
-				}
+				},
+				'section-bg': 'hsl(var(--section-bg))'
 			},
 			backgroundImage: {
 				'gradient-hero': 'var(--gradient-hero)',

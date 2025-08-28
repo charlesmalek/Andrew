@@ -103,8 +103,8 @@ const HeroSection = () => {
                 style={{ animationDelay: `${index * 0.1}s` }}
               >
                 <div className="flex items-center gap-3 mb-3">
-                  <div className="bg-accent-coral/20 p-2 rounded-lg">
-                    <stat.icon className="h-6 w-6 text-accent-coral" />
+                  <div className="bg-accent-orange/20 p-2 rounded-lg">
+                    <stat.icon className="h-6 w-6 text-accent-orange" />
                   </div>
                 </div>
                 <div className="space-y-1">

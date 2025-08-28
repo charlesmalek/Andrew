@@ -35,7 +35,7 @@ const Testimonials = () => {
   ];
 
   return (
-    <section className="section-padding bg-gradient-subtle">
+    <section className="section-padding bg-section-bg">
       <div className="container-enterprise">
         {/* Section Header */}
         <div className="text-center mb-16 fade-in-up">
@@ -65,7 +65,7 @@ const Testimonials = () => {
                 {/* Rating */}
                 <div className="flex gap-1 mb-4">
                   {[...Array(testimonial.rating)].map((_, i) => (
-                    <Star key={i} className="h-4 w-4 fill-accent-coral text-accent-coral" />
+                    <Star key={i} className="h-4 w-4 fill-accent-orange text-accent-orange" />
                   ))}
                 </div>
 
@@ -78,7 +78,7 @@ const Testimonials = () => {
                 <div className="border-t border-border pt-4">
                   <p className="font-semibold text-primary">{testimonial.name}</p>
                   <p className="text-sm text-muted-foreground">{testimonial.title}</p>
-                  <p className="text-sm text-accent-coral font-medium">{testimonial.company}</p>
+                  <p className="text-sm text-accent-orange font-medium">{testimonial.company}</p>
                 </div>
               </CardContent>
             </Card>

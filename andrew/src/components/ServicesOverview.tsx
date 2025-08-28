@@ -53,7 +53,7 @@ const ServicesOverview = () => {
   ];
 
   return (
-    <section className="section-padding bg-gradient-subtle">
+    <section className="section-padding bg-section-bg">
       <div className="container-enterprise">
         {/* Section Header */}
         <div className="text-center mb-16 fade-in-up">

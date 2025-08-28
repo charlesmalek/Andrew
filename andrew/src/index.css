@@ -17,7 +17,7 @@
     --popover: 0 0% 100%;
     --popover-foreground: 220 15% 15%;
 
-    /* Primary: Deep Navy Blue #0A2E5A - Trust & Professionalism */
+    /* Primary: Deep Navy Blue #0A2E5D - Trust & Professionalism */
     --primary: 213 75% 20%;
     --primary-foreground: 0 0% 98%;
     --primary-light: 213 65% 28%;
@@ -28,15 +28,20 @@
     --secondary-foreground: 220 15% 15%;
     --secondary-dark: 220 15% 25%;
 
-    /* Accent: Dark Charcoal Grey - CTAs & Energy */
-    --accent-coral: 220 15% 15%;
+    /* CTA: Teal #00A7C4 - Call to Action Buttons */
+    --accent-coral: 187 100% 38%;
     --accent-coral-foreground: 0 0% 98%;
-    --accent-coral-dark: 220 15% 8%;
+    --accent-coral-dark: 187 100% 32%;
 
     /* Medium Grey - Links & Interactive */
     --accent-blue: 220 15% 15%;
     --accent-blue-foreground: 0 0% 98%;
     --accent-blue-light: 220 15% 25%;
+
+    /* Highlight: Orange #FF7A00 - Graphs, Icons, Stats */
+    --accent-orange: 25 100% 50%;
+    --accent-orange-foreground: 0 0% 98%;
+    --accent-orange-dark: 25 100% 45%;
 
     /* Supporting Colors */
     --muted: 0 0% 96%;
@@ -44,6 +49,9 @@
 
     --accent: 0 0% 96%;
     --accent-foreground: 220 15% 15%;
+
+    /* Section Backgrounds: Light Gray #F9FAFB */
+    --section-bg: 210 20% 98%;
 
     --destructive: 0 84% 60%;
     --destructive-foreground: 0 0% 98%;
@@ -54,8 +62,8 @@
 
     /* Modern Gradients */
     --gradient-hero: linear-gradient(135deg, hsl(213 75% 20%), hsl(213 65% 28%));
-    --gradient-coral: linear-gradient(135deg, hsl(220 15% 15%), hsl(220 15% 8%));
-    --gradient-subtle: linear-gradient(180deg, hsl(0 0% 100%), hsl(0 0% 96%));
+    --gradient-coral: linear-gradient(135deg, hsl(187 100% 38%), hsl(187 100% 32%));
+    --gradient-subtle: linear-gradient(180deg, hsl(0 0% 100%), hsl(210 20% 98%));
 
     /* Professional Shadows */
     --shadow-enterprise: 0 10px 40px -10px hsl(213 75% 20% / 0.15);

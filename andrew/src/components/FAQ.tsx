@@ -57,7 +57,7 @@ const FAQ = () => {
   ];
 
   return (
-    <section className="section-padding">
+    <section className="section-padding bg-section-bg">
       <div className="container-enterprise">
         {/* Section Header */}
         <div className="text-center mb-16 fade-in-up">
@@ -86,14 +86,14 @@ const FAQ = () => {
               >
                 <button
                   onClick={() => toggleItem(index)}
-                  className="w-full p-6 text-left focus:outline-none focus:ring-2 focus:ring-accent-coral focus:ring-inset"
+                  className="w-full p-6 text-left focus:outline-none focus:ring-2 focus:ring-accent-orange focus:ring-inset"
                   aria-expanded={openItems.includes(index)}
                   aria-controls={`faq-answer-${index}`}
                 >
                   <div className="flex items-center justify-between">
                     <div className="flex-1 pr-4">
                       <div className="flex items-center gap-3 mb-2">
-                        <span className="text-xs font-medium text-accent-coral bg-accent-coral/10 px-2 py-1 rounded">
+                        <span className="text-xs font-medium text-accent-orange bg-accent-orange/10 px-2 py-1 rounded">
                           {faq.category}
                         </span>
                       </div>
