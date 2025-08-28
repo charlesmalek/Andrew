@@ -57,19 +57,16 @@ const BrandCarousel = () => {
             key={`${brand.name}-${index}`}
             className="flex-shrink-0 flex items-center justify-center"
           >
-            <div className="flex items-center gap-3 px-4 py-2 opacity-70 hover:opacity-100 transition-opacity duration-300">
+            <div className="flex items-center justify-center px-4 py-2 opacity-70 hover:opacity-100 transition-opacity duration-300">
               <img 
                 src={brand.logo} 
                 alt={brand.alt}
-                className="h-6 w-auto md:h-8 lg:h-10 object-contain"
+                className="h-8 w-auto md:h-10 lg:h-12 object-contain"
                 onError={(e) => {
                   // Fallback to text if image fails to load
                   e.currentTarget.style.display = 'none';
                 }}
               />
-              <span className="text-sm md:text-base lg:text-lg font-medium text-current whitespace-nowrap">
-                {brand.name}
-              </span>
             </div>
           </div>
         ))}
