@@ -31,21 +31,21 @@ const BrandCarousel = () => {
     },
   ];
 
-  // Sextuple the brands for perfect seamless infinite scroll
-  const duplicatedBrands = [...brands, ...brands, ...brands, ...brands, ...brands, ...brands];
+  // Quadruple the brands for perfect seamless infinite scroll
+  const duplicatedBrands = [...brands, ...brands, ...brands, ...brands];
 
   return (
     <div className="relative overflow-hidden bg-transparent py-16 md:py-20 lg:py-24">
       <div 
         ref={carouselRef}
-                  className="flex items-center gap-2 md:gap-4 lg:gap-6 carousel-seamless"
+                  className="flex items-center gap-6 md:gap-8 lg:gap-10 carousel-seamless"
       >
         {duplicatedBrands.map((brand, index) => (
           <div 
             key={`${brand.name}-${index}`}
             className="flex-shrink-0 flex items-center justify-center"
           >
-            <div className="flex items-center justify-center px-1 py-12 md:py-16 lg:py-20 opacity-80 hover:opacity-100 transition-all duration-300 hover:scale-105">
+            <div className="flex items-center justify-center px-4 py-12 md:py-16 lg:py-20 opacity-80 hover:opacity-100 transition-all duration-300 hover:scale-105">
               <img 
                 src={brand.logo} 
                 alt={brand.alt}
