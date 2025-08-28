@@ -40,7 +40,7 @@
 
     /* Supporting Colors */
     --muted: 0 0% 96%;
-    --muted-foreground: 0 0% 50%;
+    --muted-foreground: 210 100% 85%;
 
     --accent: 0 0% 96%;
     --accent-foreground: 0 0% 29%;
@@ -88,7 +88,7 @@
     --secondary-foreground: 0 0% 95%;
 
     --muted: 213 35% 15%;
-    --muted-foreground: 0 0% 71%;
+    --muted-foreground: 210 100% 75%;
 
     --accent: 213 35% 15%;
     --accent-foreground: 0 0% 95%;
