@@ -35,12 +35,12 @@ const BrandCarousel = () => {
   const duplicatedBrands = [...brands, ...brands, ...brands];
 
   return (
-    <div className="relative overflow-hidden bg-transparent">
+    <div className="relative overflow-hidden bg-transparent py-8 md:py-12 lg:py-16">
       <div 
         ref={carouselRef}
         className="flex items-center gap-12 md:gap-16 lg:gap-20 animate-scroll"
         style={{
-          animationDuration: '25s',
+          animationDuration: '15s',
           animationIterationCount: 'infinite',
           animationTimingFunction: 'linear',
         }}
@@ -50,7 +50,7 @@ const BrandCarousel = () => {
             key={`${brand.name}-${index}`}
             className="flex-shrink-0 flex items-center justify-center"
           >
-            <div className="flex items-center justify-center px-6 py-4 opacity-80 hover:opacity-100 transition-all duration-300 hover:scale-105">
+            <div className="flex items-center justify-center px-6 py-8 md:py-10 lg:py-12 opacity-80 hover:opacity-100 transition-all duration-300 hover:scale-105">
               <img 
                 src={brand.logo} 
                 alt={brand.alt}
