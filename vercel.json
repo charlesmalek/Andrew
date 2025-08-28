@@ -1,9 +1,8 @@
 {
   "version": 2,
-  "buildCommand": "npm run build",
-  "outputDirectory": "dist",
-  "installCommand": "npm install",
-  "rootDirectory": "andrew",
+  "buildCommand": "cd andrew && npm run build",
+  "outputDirectory": "andrew/dist",
+  "installCommand": "cd andrew && npm install",
   "rewrites": [
     {
       "source": "/(.*)",
