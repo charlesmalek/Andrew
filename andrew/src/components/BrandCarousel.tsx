@@ -1,7 +1,6 @@
-import { useState, useEffect, useRef } from 'react';
+import { useRef } from 'react';
 
 const BrandCarousel = () => {
-  const [isPaused, setIsPaused] = useState(false);
   const carouselRef = useRef<HTMLDivElement>(null);
 
   const brands = [
@@ -32,22 +31,16 @@ const BrandCarousel = () => {
     },
   ];
 
-  // Duplicate brands for seamless infinite scroll
-  const duplicatedBrands = [...brands, ...brands];
+  // Triple the brands for seamless infinite scroll
+  const duplicatedBrands = [...brands, ...brands, ...brands];
 
   return (
-    <div 
-      className="relative overflow-hidden bg-transparent"
-      onMouseEnter={() => setIsPaused(true)}
-      onMouseLeave={() => setIsPaused(false)}
-    >
+    <div className="relative overflow-hidden bg-transparent">
       <div 
         ref={carouselRef}
-        className={`flex items-center gap-8 md:gap-12 lg:gap-16 ${
-          isPaused ? 'animate-pause' : 'animate-scroll'
-        }`}
+        className="flex items-center gap-12 md:gap-16 lg:gap-20 animate-scroll"
         style={{
-          animationDuration: '30s',
+          animationDuration: '25s',
           animationIterationCount: 'infinite',
           animationTimingFunction: 'linear',
         }}
@@ -57,11 +50,11 @@ const BrandCarousel = () => {
             key={`${brand.name}-${index}`}
             className="flex-shrink-0 flex items-center justify-center"
           >
-            <div className="flex items-center justify-center px-4 py-2 opacity-70 hover:opacity-100 transition-opacity duration-300">
+            <div className="flex items-center justify-center px-6 py-4 opacity-80 hover:opacity-100 transition-all duration-300 hover:scale-105">
               <img 
                 src={brand.logo} 
                 alt={brand.alt}
-                className="h-8 w-auto md:h-10 lg:h-12 object-contain"
+                className="h-12 w-auto md:h-16 lg:h-20 object-contain drop-shadow-lg"
                 onError={(e) => {
                   // Fallback to text if image fails to load
                   e.currentTarget.style.display = 'none';

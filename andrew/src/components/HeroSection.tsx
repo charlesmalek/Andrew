@@ -58,11 +58,11 @@ const HeroSection = () => {
               </div>
 
               {/* Trust Indicators */}
-              <div className="pt-8">
-                <p className="text-sm text-primary-foreground/80 mb-4">
+              <div className="pt-12">
+                <p className="text-base text-primary-foreground/80 mb-6">
                   Trusted by leading brands
                 </p>
-                <div className="text-primary-foreground/60">
+                <div className="text-primary-foreground/60 py-4">
                   <BrandCarousel />
                 </div>
               </div>
