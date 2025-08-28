@@ -71,7 +71,7 @@ const ServicesOverview = () => {
           {services.map((service, index) => (
             <div 
               key={service.title}
-              className="bg-card border border-border rounded-lg p-8 hover:shadow-card-hover transition-all duration-300 hover-lift fade-in-up"
+              className="bg-card border border-border rounded-lg p-8 hover:shadow-card-hover transition-all duration-300 hover-lift fade-in-up flex flex-col h-full"
               style={{ animationDelay: `${index * 0.1}s` }}
             >
               {/* Service Icon */}
@@ -80,7 +80,7 @@ const ServicesOverview = () => {
               </div>
 
               {/* Service Content */}
-              <div className="space-y-4 mb-6">
+              <div className="space-y-4 mb-6 flex-grow">
                 <h3 className="heading-sm text-primary font-heading">
                   {service.title}
                 </h3>
@@ -100,7 +100,7 @@ const ServicesOverview = () => {
               </div>
 
               {/* CTA */}
-              <Button variant="enterprise" className="w-full group">
+              <Button variant="enterprise" className="w-full group mt-auto">
                 Learn More
                 <ArrowRight className="h-4 w-4 group-hover:translate-x-1 transition-transform" />
               </Button>
