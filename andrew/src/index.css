@@ -2,33 +2,33 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Brand Carousel Animations - Smooth Infinite Loop */
-@keyframes scroll-seamless {
+/* Brand Carousel Animations */
+@keyframes scroll {
   0% {
-    transform: translate3d(0, 0, 0);
+    transform: translateX(0);
   }
   100% {
-    transform: translate3d(-33.33333%, 0, 0);
+    transform: translateX(-20%);
   }
 }
 
-/* Ensure seamless carousel animation - NO HOVER PAUSE */
+/* Ensure seamless carousel animation */
 .carousel-seamless {
-  animation: scroll-seamless 8s linear infinite;
+  animation: scroll 3s linear infinite;
   will-change: transform;
   backface-visibility: hidden;
   -webkit-backface-visibility: hidden;
-  transform: translate3d(0, 0, 0);
-  -webkit-transform: translate3d(0, 0, 0);
+  transform: translateZ(0);
+  -webkit-transform: translateZ(0);
   -webkit-perspective: 1000px;
   perspective: 1000px;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
 }
 
-/* Accessibility: Respect reduced motion preferences */
-@media (prefers-reduced-motion: reduce) {
-  .carousel-seamless {
-    animation-duration: 30s;
-  }
+/* Pause animation on hover for better UX */
+.carousel-seamless:hover {
+  animation-play-state: paused;
 }
 
 /* Andrew Distribution Design System - Professional Brand Implementation */
