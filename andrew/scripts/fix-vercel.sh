@@ -32,9 +32,15 @@ cat > vercel.json << 'EOF'
 }
 EOF
 
-# Step 3: Ensure proper build configuration
+# Step 3: Set environment variables
+echo "⚙️  Setting environment variables..."
+export NODE_ENV=production
+export NODE_VERSION=18
+export VERCEL=true
+
+# Step 4: Ensure proper build configuration
 echo "🔨 Verifying build configuration..."
-npm run build
+npm run build:prod
 
 if [ $? -ne 0 ]; then
     echo "❌ Build failed! Please fix build errors first."

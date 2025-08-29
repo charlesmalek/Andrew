@@ -16,9 +16,17 @@ rm -rf .vercel/output
 echo "📦 Installing dependencies..."
 npm install
 
-# Step 3: Build locally with error checking
+# Step 3: Set environment variables for production
+echo "⚙️  Setting production environment variables..."
+export NODE_ENV=production
+export NODE_VERSION=18
+export VERCEL=true
+export GENERATE_SOURCEMAP=false
+export SKIP_PREFLIGHT_CHECK=true
+
+# Step 4: Build locally with error checking
 echo "🔨 Building project locally..."
-npm run build
+npm run build:prod
 
 if [ $? -ne 0 ]; then
     echo "❌ Build failed! Fix the errors before deploying."
