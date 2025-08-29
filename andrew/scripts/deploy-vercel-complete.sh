@@ -87,7 +87,8 @@ git push
 
 # Step 10: Deploy to Vercel with verification
 echo "🌐 Deploying to Vercel..."
-DEPLOYMENT_URL=$(vercel --prod --yes --json | grep -o '"url":"[^"]*"' | cut -d'"' -f4)
+vercel --prod --yes
+DEPLOYMENT_URL=$(vercel project ls | grep "andrew" | head -1 | awk '{print $3}')
 
 if [ -z "$DEPLOYMENT_URL" ]; then
     echo "❌ Deployment failed! No URL returned."
