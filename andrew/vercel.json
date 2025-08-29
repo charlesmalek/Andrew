@@ -1,6 +1,5 @@
 {
   "version": 2,
-  "name": "andrew-distribution-v2",
   "framework": "vite",
   "buildCommand": "npm run build",
   "outputDirectory": "dist",
@@ -14,11 +13,6 @@
       "destination": "/index.html"
     }
   ],
-  "functions": {
-    "app/api/**/*.js": {
-      "maxDuration": 10
-    }
-  },
   "headers": [
     {
       "source": "/assets/(.*)",
