@@ -2,19 +2,19 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Brand Carousel Animations */
-@keyframes scroll {
+/* Brand Carousel Animations - Seamless Infinite Loop */
+@keyframes scroll-seamless {
   0% {
     transform: translateX(0);
   }
   100% {
-    transform: translateX(-20%);
+    transform: translateX(-33.33333%);
   }
 }
 
 /* Ensure seamless carousel animation */
 .carousel-seamless {
-  animation: scroll 3s linear infinite;
+  animation: scroll-seamless 15s linear infinite;
   will-change: transform;
   backface-visibility: hidden;
   -webkit-backface-visibility: hidden;
@@ -24,6 +24,11 @@
   perspective: 1000px;
   -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards;
+}
+
+/* Pause animation on hover for better UX */
+.carousel-seamless:hover {
+  animation-play-state: paused;
 }
 
 /* Andrew Distribution Design System - Professional Brand Implementation */
