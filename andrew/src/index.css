@@ -2,38 +2,19 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Enhanced Brand Carousel Animations */
-@keyframes carousel-scroll {
+/* Brand Carousel Animations */
+@keyframes scroll {
   0% {
     transform: translateX(0);
   }
   100% {
-    transform: translateX(-12.5%);
+    transform: translateX(-20%);
   }
 }
 
-@keyframes fade-in-carousel {
-  0% {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-@keyframes logo-float {
-  0%, 100% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(-4px);
-  }
-}
-
-/* Enhanced carousel with improved performance */
-.carousel-enhanced {
+/* Ensure seamless carousel animation */
+.carousel-seamless {
+  animation: scroll 12s linear infinite;
   will-change: transform;
   backface-visibility: hidden;
   -webkit-backface-visibility: hidden;
@@ -41,67 +22,11 @@
   -webkit-transform: translateZ(0);
   -webkit-perspective: 1000px;
   perspective: 1000px;
-  opacity: 0;
-  transition: opacity 0.6s ease-out;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
 }
 
-.carousel-enhanced.animate {
-  animation: carousel-scroll 16s linear infinite;
-  opacity: 1;
-}
-
-/* Individual logo animations */
-.carousel-enhanced .group:nth-child(even) {
-  animation-delay: 0.1s;
-}
-
-.carousel-enhanced .group:nth-child(odd) {
-  animation-delay: 0.2s;
-}
-
-.carousel-enhanced .group:hover img {
-  animation: logo-float 2s ease-in-out infinite;
-}
-
-/* Responsive carousel adjustments */
-@media (max-width: 768px) {
-  .carousel-enhanced {
-    gap: 2rem !important;
-  }
-  
-  @keyframes carousel-scroll {
-    0% {
-      transform: translateX(0);
-    }
-    100% {
-      transform: translateX(-15%);
-    }
-  }
-}
-
-/* Performance optimizations */
-.carousel-enhanced * {
-  pointer-events: auto;
-  user-select: none;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-}
-
-/* Accessibility improvements */
-@media (prefers-reduced-motion: reduce) {
-  .carousel-enhanced {
-    animation: none !important;
-  }
-  
-  .carousel-enhanced .group:hover img {
-    animation: none !important;
-  }
-  
-  .carousel-enhanced.animate {
-    opacity: 1;
-  }
-}
+/* Continuous animation without pause for seamless experience */
 
 /* Andrew Distribution Design System - Professional Brand Implementation */
 
