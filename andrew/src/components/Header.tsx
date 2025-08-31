@@ -17,7 +17,6 @@ const Header = () => {
     { name: "Transportation & Logistics", href: "/transportation" },
     { name: "Newspaper Distribution", href: "/newspapers" },
     { name: "Magazines & Books", href: "/magazines" },
-    { name: "Magazine Sales Reports", href: "/magazines#sales-reports" },
   ];
 
   return (
