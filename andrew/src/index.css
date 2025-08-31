@@ -26,10 +26,7 @@
   animation-fill-mode: forwards;
 }
 
-/* Pause animation on hover for better UX */
-.carousel-seamless:hover {
-  animation-play-state: paused;
-}
+/* Continuous animation without pause for seamless experience */
 
 /* Andrew Distribution Design System - Professional Brand Implementation */
 
