@@ -1,9 +1,9 @@
 {
   "version": 2,
   "framework": "vite",
-  "buildCommand": "cd andrew && npm run build",
-  "outputDirectory": "andrew/dist",
-  "installCommand": "cd andrew && npm install",
+  "buildCommand": "npm run build",
+  "outputDirectory": "dist",
+  "installCommand": "npm install",
   "github": {
     "enabled": true
   },
